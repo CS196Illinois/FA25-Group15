@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css"></head>
+
+
+<body>
+  <div id = "background">
+    <div class="container">
+      <header>
+        <ul>
+          <li><a href="index.html"><h2 style="margin-right: 10px;">Home</h2></a></li>
+          <li class = "dropdown"><a href="javascript:void(0)" class="dropb"><h2 style="margin-right: 10px;">Habits</h2></a>
+            <div class = "links">
+              <a href="alcohol.html">Alcohol</a>
+              <a href="drugs.html">Drugs</a>
+              <a href="screen_time.html">Screen Time</a>
+            </div>
+          </li>
+          <li><a href="help.html"><h2 style="margin-right: 10px;">Help</h2></a></li>
+        </ul>
+        </header>
+        <h1>Negative Effects of alcohol</h1>
+      <div class ="central-box-a">
+      <main>
+          <section>
+              <img src="images/5286d567c2870e1f6fdb5048c43f7fd0.png"/>
+          </section>
+      </main>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
+  <script>
+  VANTA.CELLS({
+    el: "#background",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00
+  })
+  </script>
+</body>
+
+</html>
