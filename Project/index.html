@@ -3,64 +3,429 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="three.r134.min.js"></script>
-<script src="vanta.cells.min.js"></script>
-<script>
-VANTA.CELLS({
-  el: "vanta.cells.min.js",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00
-})
-</script>
+    <title>Anti-Organ-Failure - Interactive Body Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        .nav-item {
+            position: relative;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .nav-item:hover {
+            color: #667eea;
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+
+        .nav-item:hover .dropdown {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .dropdown-item {
+            padding: 15px 20px;
+            cursor: pointer;
+            transition: background 0.2s;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dropdown-item:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-item:hover {
+            background: #f5f5f5;
+        }
+
+        .dropdown-item .checkmark {
+            color: #66ea66;
+            font-weight: bold;
+            font-size: 1.2em;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .dropdown-item.selected .checkmark {
+            opacity: 1;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .content-area {
+            display: none;
+        }
+
+        .content-area.active {
+            display: block;
+        }
+
+        /* Home Page */
+        .body-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 70vh;
+            position: relative;
+        }
+
+
+        /* Info Panel */
+        .info-panel {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+            max-height: 40vh;
+            overflow-y: auto;
+        }
+
+        .info-panel.active {
+            transform: translateY(0);
+        }
+
+        .info-panel h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .info-panel p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .info-panel button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .info-panel button:hover {
+            background: #555;
+        }
+
+        .close-panel {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            background: none;
+            border: none;
+            font-size: 2em;
+            cursor: pointer;
+            color: #999;
+            padding: 0;
+            width: auto;
+        }
+
+        .close-panel:hover {
+            color: #333;
+        }
+
+        /* Selected Habits Display on Home */
+        .selected-habits-display {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .selected-habits-display h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .selected-habits-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .selected-habit-item {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 25px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .selected-habit-item .icon {
+            font-size: 1.5em;
+        }
+
+        @media (max-width: 768px) {
+            .body-diagram {
+                width: 300px;
+                height: 450px;
+            }
+            
+            .habits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
-
-
 <body>
-  <div class="container">
-    <header>
-        <h1 style="margin-right: 10px;">HomePage</h1>
-    </header>
-    <div class ="central-box">
-    <main>
-        <section>
-            <h2>You've been messed up today...</h2>
-            <p style="padding: 5px; margin-left: 10px;">What bad behavior have you done today?</p>
-        </section>
-    </main>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-item" onclick="showPage('home')">Home</div>
+            <div class="nav-item">
+                Habits
+                <div class="dropdown">
+                    <div class="dropdown-item" data-category="smoking" onclick="filterHabit('smoking')">
+                        <span>🚬 Smoking</span>
+                        <span class="checkmark">✓</span>
+                    </div>
+                    <div class="dropdown-item" data-category="alcohol" onclick="filterHabit('alcohol')">
+                        <span>🍺 Alcohol</span>
+                        <span class="checkmark">✓</span>
+                    </div>
+                    <div class="dropdown-item" data-category="diet" onclick="filterHabit('diet')">
+                        <span>🍔 Poor Diet</span>
+                        <span class="checkmark">✓</span>
+                    </div>
+                    <div class="dropdown-item" data-category="sleep" onclick="filterHabit('sleep')">
+                        <span>😴 Sleep Deprivation</span>
+                        <span class="checkmark">✓</span>
+                    </div>
+                    <div class="dropdown-item" data-category="sedentary" onclick="filterHabit('sedentary')">
+                        <span>🛋️ Sedentary Lifestyle</span>
+                        <span class="checkmark">✓</span>
+                    </div>
+                    <div class="dropdown-item" onclick="filterHabit('all')">
+                        <span>📋 View All</span>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item">Extra</div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Home Page -->
+        <div id="homePage" class="content-area active">
+            <div class="central-box">
+                <main>
+                    <section>
+                        <h2>You've been messed up today...</h2>
+                        <p style="padding: 5px; margin-left: 10px;">What bad behavior have you done today?</p>
+                    </section>
+                    <div class="selected-habits-display">
+                        <h3>Your Selected Bad Habits:</h3>
+                        <div class="selected-habits-list" id="selectedHabitsList">
+                            <p style="color: #999;">No habits selected yet. Use the Habits dropdown to select.</p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- Habits Page -->
+        <div id="habitsPage" class="content-area">
+            <h1 style="text-align: center; margin-bottom: 30px; color: #333;">Select Your Bad Habits</h1>
+            <div class="habits-grid" id="habitsGrid"></div>
+        </div>
     </div>
-  </div>
-  <script src="index.js"></script>
+
+    <!-- Info Panel (appears at bottom) -->
+    <div class="info-panel" id="infoPanel">
+        <button class="close-panel" onclick="closePanel()">×</button>
+        <h2 id="panelTitle">Your heart is unhappy cause you drink alcohol :(</h2>
+        <p id="panelDescription">Stop drinking alcohol!!!!!!</p>
+        <button id="panelButton">How to Stop</button>
+    </div>
+
+    <script>
+        const habitsData = [
+            {
+                icon: "🚬",
+                title: "Smoking",
+                category: "smoking"
+            },
+            {
+                icon: "🍺",
+                title: "Excessive Alcohol",
+                category: "alcohol"
+            },
+            {
+                icon: "🍔",
+                title: "Poor Diet",
+                category: "diet"
+            },
+            {
+                icon: "😴",
+                title: "Sleep Deprivation",
+                category: "sleep"
+            },
+            {
+                icon: "🛋️",
+                title: "Sedentary Lifestyle",
+                category: "sedentary"
+            }
+        ];
+
+        let selectedHabits = [];
+
+        function showPage(page) {
+            document.querySelectorAll('.content-area').forEach(area => {
+                area.classList.remove('active');
+            });
+            
+            if (page === 'home') {
+                document.getElementById('homePage').classList.add('active');
+                closePanel();
+            } else if (page === 'habits') {
+                document.getElementById('habitsPage').classList.add('active');
+                renderHabits();
+            }
+        }
+
+        function filterHabit(category) {
+            const habit = habitsData.find(h => h.category === category);
+            if (habit) {
+                toggleHabitSelection(habit);
+                updateDropdownCheckmarks();
+            } else if (category === 'all') {
+                showPage('habits');
+            }
+        }
+
+        function toggleHabitSelection(habit) {
+            const index = selectedHabits.findIndex(h => h.category === habit.category);
+            if (index > -1) {
+                selectedHabits.splice(index, 1);
+            } else {
+                selectedHabits.push(habit);
+            }
+            updateSelectedHabitsDisplay();
+        }
+
+        function updateDropdownCheckmarks() {
+            document.querySelectorAll('.dropdown-item[data-category]').forEach(item => {
+                const category = item.getAttribute('data-category');
+                const isSelected = selectedHabits.some(h => h.category === category);
+                if (isSelected) {
+                    item.classList.add('selected');
+                } else {
+                    item.classList.remove('selected');
+                }
+            });
+        }
+
+        function updateSelectedHabitsDisplay() {
+            const listContainer = document.getElementById('selectedHabitsList');
+            
+            if (selectedHabits.length === 0) {
+                listContainer.innerHTML = '<p style="color: #999;">No habits selected yet. Use the Habits dropdown to select.</p>';
+            } else {
+                listContainer.innerHTML = selectedHabits.map(habit => `
+                    <div class="selected-habit-item">
+                        <span class="icon">${habit.icon}</span>
+                        <span>${habit.title}</span>
+                    </div>
+                `).join('');
+            }
+        }
+
+        function renderHabits(filter = 'all') {
+            const grid = document.getElementById('habitsGrid');
+            grid.innerHTML = '';
+
+            const filtered = filter === 'all' 
+                ? habitsData 
+                : habitsData.filter(h => h.category === filter);
+
+            filtered.forEach((habit, index) => {
+                const card = document.createElement('div');
+                card.className = 'habit-card';
+                const isSelected = selectedHabits.some(h => h.category === habit.category);
+                if (isSelected) card.classList.add('selected');
+                
+                card.innerHTML = `
+                    <div class="habit-icon">${habit.icon}</div>
+                    <div class="habit-title">${habit.title}</div>
+                `;
+
+                card.addEventListener('click', function() {
+                    toggleHabitSelection(habit);
+                    this.classList.toggle('selected');
+                });
+
+                grid.appendChild(card);
+            });
+        }
+
+        renderHabits();
+    </script>
 </body>
-
-
-
-<style>
-  .container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  header{
-    text-align: center;
-    padding: 5px;
-    background-color: #88f2a4;
-    color: rgb(115, 112, 108);
-    
-  }
-  .central-box{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
-
 </html>
