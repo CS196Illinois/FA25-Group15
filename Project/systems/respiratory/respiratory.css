@@ -6,7 +6,8 @@
 
 .lung {
   position: absolute;
-  top: 60%;
+  top: 90%;
+  /*top: 60%;*/
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px !important;
@@ -17,7 +18,8 @@
 
 .lung-damaged {
   position: absolute;
-  top: 60%;
+  top: 90%;
+  /*top: 60%; */
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px !important;

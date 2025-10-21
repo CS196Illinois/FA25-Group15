@@ -14,11 +14,11 @@ function showDamagedLung(habit) {
   let imagePath = '';
   
   if (habit === 'smoking') {
-    imagePath = '../../images/assets-lung/lung-smoke.png';
+    imagePath = '../../images/lung-smoke.png';
   } else if (habit === 'alcohol') {
-    imagePath = '../../images/assets-lung/lung-alcohol.png';
+    imagePath = '../../images/lung-alcohol.png';
   } else if (habit === 'drugs') {
-    imagePath = '../../images/assets-lung/lung-drugs.png';
+    imagePath = '../../images/lung-drugs.png';
   }
   
   console.log('Setting image path to:', imagePath);
