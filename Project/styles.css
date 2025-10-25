@@ -284,7 +284,7 @@ li.dropdown1 {
 .badteeth {
   width: 10vw;
   position: relative;
-  bottom: 15.5%;
+  bottom: -31.5px;
   left: 45.7%;
   visibility: hidden;
 }
@@ -295,6 +295,15 @@ li.dropdown1 {
   bottom: 110.6%;
   left: 44.8%;
   padding-bottom: 5%;
+}
+
+.bowlegs {
+  width: 10vw;
+  position: relative;
+  bottom: 110.6%;
+  left: 44.8%;
+  padding-bottom: 5%;
+  visibility: hidden;
 }
 
 .head {

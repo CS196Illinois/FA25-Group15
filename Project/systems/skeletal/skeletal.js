@@ -14,13 +14,27 @@ function toggleSidebarDropdown() {
 // Handle habit selection
 function selectHabit(habit) {
   console.log('Selected habit:', habit);
-  if ("drinksmoke") {
+  if ("vitdef") {
     const toBeHidden = document.getElementById("head");
     toBeHidden.style.visibility = 'hidden';
     const toShow = document.getElementById("badteeth");
     toShow.style.visibility = "visible";
     boneText.style.display = 'block';
-    boneText.innerHTML = "<b>Possible Consequence ⚠️:</b> Periodontis/Gum disease <br> <b>Cause 🔍:</b> Buildup of bacteria under gums causing large layers of plaque and gingivitis to develop on top of teeth <br> <b>Symptoms 🤒:</b> Teeth falling out, red/swollen gums, tooth discoloration (yellow/brown due to nicotine/tobacco tar) <br> <b>More:</b> Smoking<b>*</b> more cigarettes and at a longer duration will increase gum disease, weakening your immune system, and it puts you 2x at risk for gum-disease compared to non-smokers. It's time to stop! <br> <b>*Here, smoking refers to both vapes and cigarettes</b>";
+    boneText.innerHTML = 
+    `<b>Possible Consequence ⚠️:</b> Periodontis/Gum disease <br> 
+    <b>Cause 🔍:</b> Buildup of bacteria under gums causing large layers of plaque and gingivitis to develop on top of teeth <br> 
+    <b>Symptoms 🤒:</b> Teeth falling out, red/swollen gums, tooth discoloration (yellow/brown due to nicotine/tobacco tar) <br> 
+    <b>More:</b> Smoking<b>*</b> more cigarettes and at a longer duration will increase gum disease, weakening your immune system, and it puts you 2x at risk for gum-disease compared to non-smokers. It's time to stop! <br>
+     <b>*Here, smoking refers to both vapes and cigarettes</b>`;
+  } 
+  if ("drinksmoke") {
+    const toBeHidden = document.getElementById("bhalf");
+    toBeHidden.style.visibility = 'hidden';
+    const toShow = document.getElementById("bowlegs");
+    toShow.style.visibility = "visible";
+    boneText.style.display = 'block';
+    /*boneText.innerHTML = */
+
   }
   // You can add functionality here to show organ effects for the selected habit
   // For example: highlight organs, show info boxes, etc.
