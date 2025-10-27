@@ -26,6 +26,7 @@ header{
     text-align: center;
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 10;
 }
 
 .habits {
