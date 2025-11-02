@@ -281,8 +281,9 @@ li.dropdown1 {
   height: 0;
 }
 /*Skeletal System Page*/
-.badteeth {
+/*.badteeth {
   width: 10vw;
+  height:fit-content;
   position: relative;
   top: 31.5px;
   left: 45.7%;
@@ -358,7 +359,7 @@ li.dropdown1 {
   position: relative;
   bottom: 44%;
   left: 57%;
-}
+}*/
 
 /*BASIC CSS for habit text- I think it'd be cool to add an animation when you click on one of the drop downs
 if you agree I can work on that. (I agree - SZ)*/

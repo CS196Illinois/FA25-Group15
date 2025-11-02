@@ -1,0 +1,84 @@
+.container1 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.head {
+  width: 10vw;
+  position: relative;
+  top: 5%;
+  left: 45%;
+}
+
+.mainb {
+  width: 10vw;
+  position: relative;
+  top: 5%;
+  left: 45%;
+}
+
+.badteeth {
+  width: 10vw;
+  position: relative;
+  top: 31.5px;
+  left: 45.7%;
+  visibility: hidden;
+}
+
+.bhalf {
+  width: 12vw;
+  position: relative;
+  bottom: 110.6%;
+  left: 44.8%;
+  padding-bottom: 5%;
+  visibility: visible;
+}
+
+.bowlegs {
+  width: 12vw;
+  position: relative;
+  left: 44.7%;
+  bottom: -382px;
+  padding-bottom: 5%;
+  visibility: hidden;
+}
+
+.ostp {
+  height: 50vw;
+  width: 25vw;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  left: 70%;
+  top: -150%;
+}
+
+
+#skinfo {
+  display: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 25px;
+  color: rgb(62, 125, 104);
+  width: 30%;
+  position:relative;
+  top:-120vw;
+  left: 2vw;
+  background-color: rgba(134, 241, 179, 0.5);
+  border: rgb(62, 125, 104) solid 2px;
+  border-radius: 10%;
+}
+
+.larm {
+  width: 9vw;
+  position: relative;
+  bottom: 92%;
+  left: 36%;
+}
+
+.rarm {
+  width: 9vw;
+  position: relative;
+  bottom: 44%;
+  left: 57%;
+}
