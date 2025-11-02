@@ -8,40 +8,50 @@
   margin: 2rem auto;
   max-width: 900px;
   padding: 1rem;
+  position: relative; /* allow absolutely positioned popups inside */
 }
 
-.organ-image {
-  max-width: 320px; /* control image size */
-  width: 40vw;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-  display: block;
-}
 
-.organ-image.main-organ {
+
+.brain {
+  width: 60vw;
+  max-width: 500px;
+  margin-left: 50px;
+ 
+}
+.prefrontal {
   width: 48vw;
   max-width: 420px;
 }
 
-.stacked {
+.nervous {
   display: flex;
-  flex-direction: column; /* stack vertically */
-  align-items: center;
+  flex-direction: column;
   gap: 0.6rem;
 }
 
-/* Slight visual offset so the stacked images appear as a vertical column */
-.organ-image.stacked-top {
-  transform: translateY(0);
+/* Place #info and #info2 at the far left of the viewport */
+#info, #info2 {
+  display: none; /* shown by scripts */
+  position: fixed; /* fixed to the viewport so they remain at the left */
+  left: 1.5rem; /* small gutter from the viewport edge */
+  width: 16vw;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 16px;
+  color: rgb(62, 125, 104);
+  background-color: rgba(134, 241, 179, 0.95);
+  border: rgb(62, 125, 104) solid 2px;
+  border-radius: 10px;
+  text-align: left;
+  z-index: 60;
 }
 
-.organ-image.stacked-bottom {
-  transform: translateY(0);
-}
+/* stacking positions */
+#info { top: 12vh; }
+#info2 { top: calc(12vh + 9rem); color: rgb(159, 127, 255); background-color: rgba(0,255,255,0.16); border-color: rgb(159,127,255); }
 
-/* Responsive tweaks */
-@media (max-width: 640px) {
-  .organ-image { width: 70vw; max-width: 260px; }
-  .organ-image.main-organ { width: 78vw; max-width: 320px; }
-}
+
+
+
+

@@ -33,12 +33,11 @@
         <ul class = "subd" >
           <li class = "dropdown1"><a href="javascript:void(0)" class="dropb"><h1 style="margin-right: 10px;">habit</h1></a>
             <div class = "links">
-              <button id = "smbutton">Smoking</button>
+              <button id = "smbutton">chronic pressure</button>
               <button id = "abutton">Alcohol</button>
-              <button id = "pdbutton">Poor Diet</button>
               <button id = "slbutton">Sedentary Lifestyle</button>
               <button id = "psbutton">Poor Sleep</button>
-              <button id = "ecbutton">Excessive Caffeine</button>
+              <button id = "ecbutton">Addiction to digital devices</button>
             </div>
           </li>
         </ul>
@@ -56,17 +55,13 @@
           </div>
           
           <div class="sidebar-dropdown-content" id="sidebarHabitsList">
-            <div class="sidebar-habit-item" onclick="selectHabit('smoking')">
-              <span class="sidebar-habit-icon">🚬</span>
-              <span class="sidebar-habit-name">Smoking</span>
+            <div class="sidebar-habit-item" onclick="selectHabit('chronic-pressure')">
+              <span class="sidebar-habit-icon">😣</span>
+              <span class="sidebar-habit-name">Chronic Pressure</span>
             </div>
             <div class="sidebar-habit-item" onclick="selectHabit('alcohol')">
               <span class="sidebar-habit-icon">🍺</span>
               <span class="sidebar-habit-name">Alcohol</span>
-            </div>
-            <div class="sidebar-habit-item" onclick="selectHabit('poor-diet')">
-              <span class="sidebar-habit-icon">🍔</span>
-              <span class="sidebar-habit-name">Poor Diet</span>
             </div>
             <div class="sidebar-habit-item" onclick="selectHabit('sedentary')">
               <span class="sidebar-habit-icon">🛋️</span>
@@ -76,28 +71,26 @@
               <span class="sidebar-habit-icon">😴</span>
               <span class="sidebar-habit-name">Poor Sleep</span>
             </div>
-            <div class="sidebar-habit-item" onclick="selectHabit('caffeine')">
-              <span class="sidebar-habit-icon">☕</span>
-              <span class="sidebar-habit-name">Excessive Caffeine</span>
+            <div class="sidebar-habit-item" onclick="selectHabit('Addiction')">
+              <span class="sidebar-habit-icon">📱</span>
+              <span class="sidebar-habit-name">Addiction to digital devices</span>
             </div>
           </div>
         </div>
       </div>
 
   <!-- Organ images will go here when you add them -->
-  <div class="organ-container">
-    <img src="../../images/brain(before) (1).png" alt="Brain" class="organ-image main-organ">
-    <div class="stacked">
-      <img src="../../images/nervousSystem (2).png" alt="Nervous" class="organ-image stacked-top">
-      <img src="../../images/prefrontal(impacted).png" alt="Prefrontal" class="organ-image stacked-bottom">
+    <div class="organ-container">
+    <img id="brainImage" src="../../images/brain(before) (1).png" alt="Brain" class="brain">
+    <img id="nervousImage" src="../../images/nervousSystem (2).png" alt="Nervous" class="nervous" style="display: none;" aria-hidden="true">
+    <img id="prefrontalImage" src="../../images/prefrontal(impacted).png" alt="Prefrontal" class="prefrontal" style="display: none;" aria-hidden="true">
+      <div id="info"></div>
+      <div id="info2"></div>
     </div>
-  </div>
-      <div id  = "info"></div>
-      <div id = "info2"></div>
-    </div>
-  </div>
+  </div>    
 
   <script src="../../index.js"></script>
+  <script src="../../style.css"></script>
   <script src="brain.js"></script>
 </body>
 </html>
