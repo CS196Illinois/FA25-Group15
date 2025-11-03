@@ -15,7 +15,7 @@
       <header>
         <ul class = "maind">
           <li><a href="../../index.html"><h2 style="margin-right: 10px;">Home</h2></a></li>
-          <li class = "dropdown"><a href="javascript:void(0)" class="dropb"><h2 style="margin-right: 10px;">Habits</h2></a>
+          <li class = "dropdown"><a href="javascript:void(0)" class="dropb"><h2 style="margin-right: 10px;">Systems</h2></a>
             <div class = "links">
               <a href="../digestive/digestive.html">Digestive</a>
               <a href="../respiratory/respiratory.html">Respiratory</a>
@@ -71,21 +71,24 @@
               <span class="sidebar-habit-icon">😴</span>
               <span class="sidebar-habit-name">Poor Sleep</span>
             </div>
-            <div class="sidebar-habit-item" onclick="selectHabit('Addiction')">
+            <div class="sidebar-habit-item" onclick="selectHabit('Addiction-Device')">
               <span class="sidebar-habit-icon">📱</span>
               <span class="sidebar-habit-name">Addiction to digital devices</span>
             </div>
           </div>
         </div>
+        <button class="reset-button" onclick="resetBrain()">
+          🔄 Reset
+        </button>
       </div>
 
   <!-- Organ images will go here when you add them -->
     <div class="organ-container">
-    <img id="brainImage" src="../../images/brain(before) (1).png" alt="Brain" class="brain">
+    <img id="defaultImage" src="../../images/brain(before) (1).png" alt="default" class="default">
+    <img id="brainImage" src="../../images/brain(after) (1).png" alt="Brain" class="brain" style="display: none;" aria-hidden="true ">
     <img id="nervousImage" src="../../images/nervousSystem (2).png" alt="Nervous" class="nervous" style="display: none;" aria-hidden="true">
     <img id="prefrontalImage" src="../../images/prefrontal(impacted).png" alt="Prefrontal" class="prefrontal" style="display: none;" aria-hidden="true">
       <div id="info"></div>
-      <div id="info2"></div>
     </div>
   </div>    
 
