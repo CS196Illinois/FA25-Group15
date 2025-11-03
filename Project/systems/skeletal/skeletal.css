@@ -1,6 +1,6 @@
 .container1 {
     width: 100vw;
-    height: 100vh;
+    height: 10vh;
     position: absolute;
 }
 
@@ -29,9 +29,8 @@
 .bhalf {
   width: 12vw;
   position: relative;
-  bottom: 110.6%;
-  left: 44.8%;
-  padding-bottom: 5%;
+  top: 5%;
+  left: 44%;
   visibility: visible;
 }
 
@@ -72,13 +71,21 @@
 .larm {
   width: 9vw;
   position: relative;
-  bottom: 92%;
+  top: 243.5%;
   left: 36%;
 }
 
 .rarm {
-  width: 9vw;
+  width: 8.5vw;
   position: relative;
-  bottom: 44%;
-  left: 57%;
+  top: 143%;
+  left: 55%;
+}
+.left {
+  float: left; 
+  position: relative;
+}
+.right {
+  float: right;
+  position: relative;
 }
