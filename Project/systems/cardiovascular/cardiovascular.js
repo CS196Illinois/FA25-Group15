@@ -1,3 +1,12 @@
+// Heart images for each habit
+const heartImages = {
+  smoking: '../../images/heart-smoke.png',
+  alcohol: '../../images/heart-alcohol.png',
+  'poor-diet': '../../images/heart-unhealthy-diet.png',
+  'poor-sleep': '../../images/heart-lackofsleep.png',
+  normal: '../../images/heart-normal.png'
+};
+
 // Toggle sidebar dropdown
 function toggleSidebarDropdown() {
   const habitsList = document.getElementById('sidebarHabitsList');
@@ -7,11 +16,24 @@ function toggleSidebarDropdown() {
   toggle.classList.toggle('open');
 }
 
-// Handle habit selection
+// Handle habit selection and change heart image
 function selectHabit(habit) {
   console.log('Selected habit:', habit);
-  // You can add functionality here to show organ effects for the selected habit
-  // For example: highlight organs, show info boxes, etc.
+  
+  // Change the heart image based on selected habit
+  const heartImage = document.getElementById('heartImage');
+  if (heartImage && heartImages[habit]) {
+    heartImage.src = heartImages[habit];
+  }
+}
+
+// Reset to normal heart
+function resetHeart() {
+  console.log('Reset to normal heart');
+  const heartImage = document.getElementById('heartImage');
+  if (heartImage) {
+    heartImage.src = heartImages.normal;
+  }
 }
 
 // Close dropdown when clicking outside
@@ -24,5 +46,13 @@ document.addEventListener('click', function(event) {
       habitsList.classList.remove('open');
       toggle.classList.remove('open');
     }
+  }
+});
+
+// Initialize with normal heart on page load
+window.addEventListener('DOMContentLoaded', function() {
+  const heartImage = document.getElementById('heartImage');
+  if (heartImage) {
+    heartImage.src = heartImages.normal;
   }
 });

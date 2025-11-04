@@ -17,17 +17,26 @@
           <li><a href="../../index.html"><h2 style="margin-right: 10px;">Home</h2></a></li>
           <li class = "dropdown"><a href="javascript:void(0)" class="dropb"><h2 style="margin-right: 10px;">Systems</h2></a>
             <div class = "links">
+<<<<<<< HEAD
                <a href="../Brain/brian.html">Brain & Nervous</a>
               <a href="../cardiovascular/cardiovascular.html">Cardiovascular</a>
               <a href="../digestive/digestive.html">Digestive</a>
               <a href="../respiratory/respiratory.html">Respiratory</a>
               <a href="../skeletal/skeletal.html">Skeletal</a>
+=======
+              <a href="digestive.html">Digestive</a>
+              <a href="../respiratory/respiratory.html">Respiratory</a>
+              <a href="../skeletal/skeletal.html">Skeletal</a>
+              <a href="../cardiovascular/cardiovascular.html">Cardiovascular</a>
+              <a href="../Brain/brian.html">Brain & Nervous</a>
+>>>>>>> a615e284e4896812134a973b767c6d3c5c5f301b
             </div>
           </li>
           <li><a href="../../help.html"><h2 style="margin-right: 10px;">Help</h2></a></li>
         </ul>
       </header>
 
+<<<<<<< HEAD
       <div class = "habads">
         <h1>Your bad habit </h1>
         <ul class = "subd" >
@@ -41,6 +50,21 @@
         </ul>
         <h1>is...</h1>
       </div>
+=======
+      <!-- <div class = "habads">
+        <h1>Your bad </h1>
+        <ul class = "subd" >
+          <li class = "dropdown1"><a href="javascript:void(0)" class="dropb"><h1 style="margin-right: 10px;">habit</h1></a>
+            <div class = "links">
+              <button id = "smbutton">Smoking</button>
+              <button id = "abutton">Alcohol</button>
+              <button id = "dsbutton">Drugs</button>
+            </div>
+          </li>
+        </ul>
+        <h1>is...</h1>
+      </div> -->
+>>>>>>> a615e284e4896812134a973b767c6d3c5c5f301b
 
       <!-- Sidebar Dropdown -->
       <div class="sidebar">
@@ -53,10 +77,22 @@
           </div>
           
           <div class="sidebar-dropdown-content" id="sidebarHabitsList">
+<<<<<<< HEAD
+=======
+            <div class="sidebar-habit-item" onclick="selectHabit('Drugs')">
+              <span class="sidebar-habit-icon">💊</span>
+              <span class="sidebar-habit-name">Drug use</span>
+            </div>
+              <div class="sidebar-habit-item" onclick="selectHabit('Alcohol')">
+              <span class="sidebar-habit-icon">🍺</span>
+              <span class="sidebar-habit-name">Alcohol</span>
+            </div>
+>>>>>>> a615e284e4896812134a973b767c6d3c5c5f301b
             <div class="sidebar-habit-item" onclick="selectHabit('Smoking')">
               <span class="sidebar-habit-icon"> 🚬</span>
               <span class="sidebar-habit-name">Smoking</span>
             </div>
+<<<<<<< HEAD
             <div class="sidebar-habit-item" onclick="selectHabit('Alcohol')">
               <span class="sidebar-habit-icon">🍺</span>
               <span class="sidebar-habit-name">Alcohol</span>
@@ -64,6 +100,23 @@
             <div class="sidebar-habit-item" onclick="selectHabit('Drugs')">
               <span class="sidebar-habit-icon">💊</span>
               <span class="sidebar-habit-name">Drugs</span>
+=======
+            <div class="sidebar-habit-item" onclick="selectHabit('DoomScrolling')">
+              <span class="sidebar-habit-icon">📱</span>
+              <span class="sidebar-habit-name">Doomscrolling</span>
+            </div>
+              <div class="sidebar-habit-item" onclick="selectHabit('LowMovement')">
+              <span class="sidebar-habit-icon">🛏️</span>
+              <span class="sidebar-habit-name">Low movement</span>
+            </div>
+            <div class="sidebar-habit-item" onclick="selectHabit('Overeating')">
+              <span class="sidebar-habit-icon">🍽️</span>
+              <span class="sidebar-habit-name">Overeating</span>
+            </div>
+              <div class="sidebar-habit-item" onclick="selectHabit('Sleep')">
+              <span class="sidebar-habit-icon">💤</span>
+              <span class="sidebar-habit-name">Lack of sleep</span>
+>>>>>>> a615e284e4896812134a973b767c6d3c5c5f301b
             </div>
           </div>
         </div>
@@ -71,6 +124,7 @@
         <button class="reset-button" onclick="resetLungs()">Reset</button>
       </div>
 
+<<<<<<< HEAD
 <img class = "lung" id="normalLung" src="../../images/lung-normal.png"/>
 <img class = "lung-damaged" id="damagedLung" src="../../images/lung-smoke.png"/><!--style="opacity: 0;-->
       <div id  = "info"></div>
@@ -78,6 +132,19 @@
     </div>
   </div>
 
+=======
+<img class = "lung" id="normalLung" src="../../images/assets-lung/lung-normal.png"/>
+<img class = "lung-damaged" id="damagedLung" src="../../images/assets-lung/lung-normal.png" style="opacity: 0;"/>
+    </div>
+  </div>
+
+<!-- Description box -->
+<div class="description-box" id="descriptionBox">
+  <h3 id="descriptionTitle">Select a Habit</h3>
+  <p id="descriptionText">Click on a habit to see how it affects the respiratory system.</p>
+</div>
+
+>>>>>>> a615e284e4896812134a973b767c6d3c5c5f301b
   <script src="../../index.js"></script>
   <script src="respiratory.js"></script>
 </body>
