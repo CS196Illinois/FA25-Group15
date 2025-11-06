@@ -19,19 +19,24 @@
   z-index: -1;
 }
 
-.badteeth {
-  width: 10vw;
+.hidden {
   position: relative;
-  top: 31.5px;
-  left: 45.7%;
-  visibility: hidden;
+  top: 192px;
+  left: 300px;
+}
+.it {
+  position: absolute;
+  width: 60px;
+  height: 70px;
+  top: 138px;
+  left: -61px;
 }
 
 .legs {
   width: 12vw;
   position: relative;
   top: 75%;
-  left: -1.09%;
+  left: -1.085%;
   z-index: 0;
 }
 
@@ -42,6 +47,9 @@
   bottom: -382px;
   padding-bottom: 5%;
   visibility: hidden;
+}
+.hidden {
+  position: absolute;
 }
 
 .ostp {

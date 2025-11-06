@@ -1,5 +1,6 @@
 const boneText = document.getElementById("skinfo");
 const boneText2 = document.getElementById("skinfo2");
+const skull = document.getElementById("skull");
 var toShow;
 var toBeHidden;
 var toBeHidden2;
@@ -19,10 +20,6 @@ function toggleSidebarDropdown() {
 function selectHabit(habit) {
   console.log('Selected habit:', habit);
   if (habit === "drinksmoke") {
-    toBeHidden = document.getElementById("head");
-    toBeHidden.style.visibility = 'hidden';
-    toShow = document.getElementById("badteeth");
-    toShow.style.visibility = "visible";
     boneText.style.display = 'block';
     boneText.innerHTML = 
     `<b>Possible Consequence ⚠️:</b> Periodontis/Gum disease <br> 
@@ -31,10 +28,10 @@ function selectHabit(habit) {
     <b>More:</b> Smoking<b>*</b> more cigarettes and at a longer duration will increase gum disease, weakening your immune system, and it puts you 2x at risk for gum-disease compared to non-smokers. It's time to stop! <br>
      <b>*Here, smoking refers to both vapes and cigarettes</b>`;
   } else if (habit === "vitdef") {
-    toBeHidden = document.getElementById("bhalf");
+    /*toBeHidden = document.getElementById("bhalf");
     toBeHidden.style.visibility = 'hidden';
     toShow = document.getElementById("bowlegs");
-    toShow.style.visibility = "visible";
+    toShow.style.visibility = "visible";*/
     boneText.style.display = 'block';
     boneText.innerHTML = `<b>Possible Consequence ⚠️: </b> Osteomalacia & Rickets <br>
     <b>Cause 🔍:</b> Hypocalcemia (low calcium levels in blood stream) leads to hyperparathyroidism (overactive parathyroid glands) <br>
@@ -47,7 +44,7 @@ function selectHabit(habit) {
     <ol> (oily fish) salmon, tuna, mackerel, 
     or milk, cereal, or orange juice*/;
   } else if (habit === "exercise") {
-    toBeHidden = document.getElementById("rarm");
+    /*toBeHidden = document.getElementById("rarm");
     toBeHidden.style.visibility = 'hidden';
     toBeHidden3 = document.getElementById("larm");
     toBeHidden3.style.visibility = 'hidden';
@@ -58,12 +55,13 @@ function selectHabit(habit) {
     toBeHidden2 = document.getElementById("bhalf");
     toBeHidden2.style.visibility = 'hidden';
     toShow = document.getElementById("muscles");
-    toShow.style.visibility = "visible";
+    toShow.style.visibility = "visible";*/
     boneText.style.display = 'block';
     boneText.innerHTML = `<b>Possible Consequence ⚠️: </b> <br> Muscle atrophy <br>
     <b>Cause 🔍:</b> Too little exercise leads to weakened muscles and bones <br> 
     <b>Symptoms 🤒:</b> Facial paralysis, muscle difference/weakness, numbmess/tingling in arms/legs, gradual memory loss <br> 
-    <b>Suggested exercises:</b> <br>
+    `;
+    /*<b>Suggested exercises:</b> <br>
     <ol>
     <li> Walking 🚶🏼</li> <br>
     <li> Running 🏃</li> <br>
@@ -72,10 +70,9 @@ function selectHabit(habit) {
     <li>Tennis 🎾</li><br>
     <li>Pickleball 🏓</li><br>
     <li>Stair exercises 𓊍</li><br>
-    </ol>
-    `;
+    </ol>*/
   } else if (habit === "caldef") {
-    toBeHidden = document.getElementById("rarm");
+    /*toBeHidden = document.getElementById("rarm");
     toBeHidden.style.visibility = 'hidden';
     toBeHidden3 = document.getElementById("larm");
     toBeHidden3.style.visibility = 'hidden';
@@ -86,21 +83,20 @@ function selectHabit(habit) {
     toBeHidden2 = document.getElementById("bhalf");
     toBeHidden2.style.visibility = 'hidden';
     toShow = document.getElementById("osteop");
-    toShow.style.visibility = "visible";
+    toShow.style.visibility = "visible";*/
     boneText.style.display = 'block';
     boneText.innerHTML = `<b>Possible Consequences ⚠️: </b> <br> Hypocalcemia & Osteoporosis <br>
     <b>Cause 🔍:</b> Too little calcium due to a calcium deficient diet can lead to weak bones,
     or result in bone fractures <br> 
     <b>Symptoms 🤒:</b> Muscle cramps (specifically in back/legs, dry/scaly skin, brittle nails) <br> 
-    <b>Recommendations:</b> <br>
+    `;
+    /*<b>Recommendations:</b> <br>
     <b> Adults (ages 19-50, men 51 -70): </b> 1000 mg of calcium/day <br>
     <b> Women & Men (ages 51+ | 71+ ):</b> 1200 mg of calcium/day (according to *RDA) <br>
     <b> Consume: </b>
     Calcium-rich foods: <br>
     Dairy 🥛,  turnips 🍠, salmon/canned salmon w/ bones 🍣, sardines 🐟, <br>
-    tuna 🐟, soy products (e.g. tofu) 🥜
-    `;
-
+    tuna 🐟, soy products (e.g. tofu) 🥜*/
   }
   // You can add functionality here to show organ effects for the selected habit
   // For example: highlight organs, show info boxes, etc.
