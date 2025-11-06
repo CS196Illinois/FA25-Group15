@@ -4,18 +4,19 @@
     position: absolute;
 }
 
-.head {
+.skull {
   width: 10vw;
   position: relative;
-  top: 5%;
-  left: 45%;
+  top: -63.5%;
+  left: 45.2%;
 }
 
-.mainb {
-  width: 10vw;
+.mainbody {
+  width: 34vw;
   position: relative;
-  top: 5%;
-  left: 45%;
+  top: 18.5%;
+  left: 23.22%;
+  z-index: -1;
 }
 
 .badteeth {
@@ -26,12 +27,12 @@
   visibility: hidden;
 }
 
-.bhalf {
+.legs {
   width: 12vw;
   position: relative;
-  top: 5%;
-  left: 44%;
-  visibility: visible;
+  top: 75%;
+  left: -1.09%;
+  z-index: 0;
 }
 
 .bowlegs {
