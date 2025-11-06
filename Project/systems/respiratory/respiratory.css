@@ -6,12 +6,7 @@
 
 .lung {
   position: absolute;
-<<<<<<< HEAD
-  top: 90%;
-  /*top: 60%;*/
-=======
   top: 60%;
->>>>>>> a615e284e4896812134a973b767c6d3c5c5f301b
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px !important;
@@ -22,12 +17,7 @@
 
 .lung-damaged {
   position: absolute;
-<<<<<<< HEAD
-  top: 90%;
-  /*top: 60%; */
-=======
   top: 60%;
->>>>>>> a615e284e4896812134a973b767c6d3c5c5f301b
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px !important;
@@ -66,8 +56,6 @@
 
 .reset-button:active {
   background-color: #e8e8e8;
-<<<<<<< HEAD
-=======
 }
 
 .description-box {
@@ -97,5 +85,4 @@
   color: #000000;
   font-size: 14px;
   line-height: 1.6;
->>>>>>> a615e284e4896812134a973b767c6d3c5c5f301b
 }

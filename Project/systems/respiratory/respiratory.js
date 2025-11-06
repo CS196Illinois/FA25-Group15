@@ -12,15 +12,6 @@ function showDamagedLung(habit) {
   const damagedLung = document.getElementById('damagedLung');
   
   let imagePath = '';
-<<<<<<< HEAD
-  
-  if (habit === 'smoking') {
-    imagePath = '../../images/lung-smoke.png';
-  } else if (habit === 'alcohol') {
-    imagePath = '../../images/lung-alcohol.png';
-  } else if (habit === 'drugs') {
-    imagePath = '../../images/lung-drugs.png';
-=======
   let title = '';
   let description = '';
   
@@ -52,28 +43,21 @@ function showDamagedLung(habit) {
     imagePath = '../../images/assets-lung/lung-smoke.png';
     title = '💤 Lack of Sleep';
     description = 'its bad';
->>>>>>> a615e284e4896812134a973b767c6d3c5c5f301b
   }
   
   console.log('Setting image path to:', imagePath);
   damagedLung.src = imagePath;
-<<<<<<< HEAD
-=======
 
   //add description box
   descriptionTitle.textContent = title;
   descriptionText.textContent = description;
->>>>>>> a615e284e4896812134a973b767c6d3c5c5f301b
   
   damagedLung.classList.add('show');
   //make normal lung disappear
   normalLung.style.opacity = '0';
   damagedLung.classList.add('show');
-<<<<<<< HEAD
-=======
   //show description box
   descriptionBox.classList.add('show');
->>>>>>> a615e284e4896812134a973b767c6d3c5c5f301b
 }
 
 // Handle habit selection
@@ -92,29 +76,14 @@ function resetLungs() {
   damagedLung.classList.remove('show');
   
   console.log('Reset to normal lungs');
-<<<<<<< HEAD
-=======
 
   //Reset description box
   descriptionTitle.textContent = 'Select a Habit';
   descriptionText.textContent = 'Click on a habit to see how it affects the respiratory system.';
->>>>>>> a615e284e4896812134a973b767c6d3c5c5f301b
 }
 
 document.addEventListener('DOMContentLoaded', function() {
   // Add click event to main habit buttons
-<<<<<<< HEAD
-  const smokingBtn = document.getElementById('smbutton');
-  const alcoholBtn = document.getElementById('abutton');
-  const drugsBtn = document.getElementById('dsbutton');
-  
-  if (smokingBtn) {
-    smokingBtn.addEventListener('click', function() {
-      showDamagedLung('smoking');
-    });
-  }
-  
-=======
   const drugsBtn = document.getElementById('dsbutton');
   const alcoholBtn = document.getElementById('abutton');
   const smokingBtn = document.getElementById('smbutton');
@@ -126,18 +95,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
->>>>>>> a615e284e4896812134a973b767c6d3c5c5f301b
   if (alcoholBtn) {
     alcoholBtn.addEventListener('click', function() {
       showDamagedLung('alcohol');
     });
   }
   
-<<<<<<< HEAD
-  if (drugsBtn) {
-    drugsBtn.addEventListener('click', function() {
-      showDamagedLung('drugs');
-=======
   if (smokingBtn) {
     smokingBtn.addEventListener('click', function() {
       showDamagedLung('smoking');
@@ -147,7 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
   if (DoomScrollingBtn) {
     smokingBtn.addEventListener('click', function() {
       showDamagedLung('smoking');
->>>>>>> a615e284e4896812134a973b767c6d3c5c5f301b
     });
   }
   
