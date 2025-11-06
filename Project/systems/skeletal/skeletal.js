@@ -1,6 +1,5 @@
 const boneText = document.getElementById("skinfo");
 const boneText2 = document.getElementById("skinfo2");
-const skull = document.getElementById("skull");
 var toShow;
 var toBeHidden;
 var toBeHidden2;
@@ -20,6 +19,10 @@ function toggleSidebarDropdown() {
 function selectHabit(habit) {
   console.log('Selected habit:', habit);
   if (habit === "drinksmoke") {
+    toShow = document.getElementById("ickyteeth");
+    toShow.style.visibility = 'visible';
+    toBeHidden = document.getElementById("skull");
+    toBeHidden.style.visibility = 'hidden';
     boneText.style.display = 'block';
     boneText.innerHTML = 
     `<b>Possible Consequence ⚠️:</b> Periodontis/Gum disease <br> 
@@ -102,7 +105,7 @@ function selectHabit(habit) {
   // For example: highlight organs, show info boxes, etc.
 }
 
-function resetBones() {
+/*function resetBones() {
   toShow.style.visibility = 'hidden';
   boneText.style.display = "none";
   toBeHidden.style.visibility = 'visible';
@@ -111,7 +114,7 @@ function resetBones() {
   toBeHidden4.style.visibility = "visible";
   toBeHidden5.style.visibility = "visible";
   console.log('Reset to normal skeleton');
-}
+}*/
 
 // Close dropdown when clicking outside
 document.addEventListener('click', function(event) {

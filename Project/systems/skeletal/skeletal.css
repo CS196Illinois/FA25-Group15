@@ -15,29 +15,24 @@
   width: 34vw;
   position: relative;
   top: 18.5%;
-  left: 23.22%;
+  left: 11.54%;
   z-index: -1;
 }
 
-.hidden {
-  position: relative;
-  top: 192px;
-  left: 300px;
-}
 .it {
-  position: absolute;
-  width: 60px;
-  height: 70px;
-  top: 138px;
-  left: -61px;
+  position: relative;
+  width: 11vw;
+  top: -62.4%;
+  left: 33.56%;
+  visibility: hidden;
 }
 
 .legs {
   width: 12vw;
   position: relative;
-  top: 75%;
-  left: -1.085%;
-  z-index: 0;
+  top: 75.3%;
+  left: -12.8%;
+  z-index: -3;
 }
 
 .bowlegs {
@@ -66,8 +61,9 @@
 #skinfo {
   display: none; /* shown by scripts */
   position: fixed; /* fixed to the viewport so they remain at the left */
+  top: 15rem;
   left: 1.5rem; /* small gutter from the viewport edge */
-  width: 16vw;
+  width: 20vw;
   min-width: 200px;
   max-width: 300px;
   padding: 16px;
@@ -78,6 +74,21 @@
   text-align: left;
   z-index: 60;
 }
+
+/*
+#skinfo {
+  display: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 25px;
+  color: rgb(62, 125, 104);
+  width: 30%;
+  position:relative;
+  top:-120vw;
+  left: 2vw;
+  background-color: rgba(134, 241, 179, 0.5);
+  border: rgb(62, 125, 104) solid 2px;
+  border-radius: 10%;
+}*/
 
 .larm {
   width: 9vw;
