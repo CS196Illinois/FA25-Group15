@@ -55,17 +55,19 @@
 
 
 #skinfo {
-  display: none;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 25px;
+  display: none; /* shown by scripts */
+  position: fixed; /* fixed to the viewport so they remain at the left */
+  left: 1.5rem; /* small gutter from the viewport edge */
+  width: 16vw;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 16px;
   color: rgb(62, 125, 104);
-  width: 30%;
-  position:relative;
-  top:-120vw;
-  left: 2vw;
-  background-color: rgba(134, 241, 179, 0.5);
+  background-color: rgba(134, 241, 179, 0.95);
   border: rgb(62, 125, 104) solid 2px;
-  border-radius: 10%;
+  border-radius: 10px;
+  text-align: left;
+  z-index: 60;
 }
 
 .larm {
