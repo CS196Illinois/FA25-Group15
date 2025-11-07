@@ -7,15 +7,15 @@
 .skull {
   width: 10vw;
   position: relative;
-  top: -63.5%;
-  left: 45.2%;
+  top: -62.7%;
+  left: 45.36%;
 }
 
 .mainbody {
   width: 34vw;
   position: relative;
-  top: 18.5%;
-  left: 11.54%;
+  top: 17%;
+  left: 11.75%;
   z-index: -1;
 }
 
@@ -30,49 +30,56 @@
 .legs {
   width: 12vw;
   position: relative;
-  top: 75.3%;
-  left: -12.8%;
-  z-index: -3;
+  top: 73%;
+  left: -12.6%;
+  z-index: 0;
 }
 
 .bowlegs {
-  width: 12vw;
+  width: 12.9vw;
   position: relative;
-  left: 44.7%;
-  bottom: -382px;
-  padding-bottom: 5%;
+  left: -25.3%;
+  top: 75.5%;
   visibility: hidden;
 }
-.hidden {
-  position: absolute;
+
+.muscle {
+  width: 40vw;
+  position: relative;
+  left: 30%;
+  top: -123%;
+  visibility: hidden;
 }
 
+
 .ostp {
+  position: relative;
   height: 50vw;
   width: 25vw;
   background-color: black;
   border-radius: 50%;
-  position: relative;
-  left: 70%;
-  top: -150%;
+  float: right;
+  left: 38%;
+  top: -600%;
+  visibility: hidden;
 }
 
 
 #skinfo {
   display: none; /* shown by scripts */
   position: fixed; /* fixed to the viewport so they remain at the left */
-  top: 15rem;
+  top: 20rem;
   left: 1.5rem; /* small gutter from the viewport edge */
-  width: 20vw;
-  min-width: 200px;
-  max-width: 300px;
+  width: 18vw;
+  min-width: 300px;
+  max-width: 400px;
   padding: 16px;
   color: rgb(62, 125, 104);
   background-color: rgba(134, 241, 179, 0.95);
   border: rgb(62, 125, 104) solid 2px;
   border-radius: 10px;
   text-align: left;
-  z-index: 60;
+  z-index: 100;
 }
 
 /*
@@ -90,24 +97,3 @@
   border-radius: 10%;
 }*/
 
-.larm {
-  width: 9vw;
-  position: relative;
-  top: 243.5%;
-  left: 36%;
-}
-
-.rarm {
-  width: 8.5vw;
-  position: relative;
-  top: 143%;
-  left: 55%;
-}
-.left {
-  float: left; 
-  position: relative;
-}
-.right {
-  float: right;
-  position: relative;
-}
