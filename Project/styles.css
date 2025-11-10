@@ -1,25 +1,32 @@
 /* General Design */
-
-#background {
-    width: 100%;
-    height: 100%;
-    position:absolute;
-    top: 0;
-    left: 0;
+html, body {
+  margin: 0;
+  padding: 0;
+  right: 0;
+  background-image: url("images/delightful-digital-aesthetic-teal-smudgy-roses-8gbf7hv039qx12o4.jpg");
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 .container {
-    height: 100vh;
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 100vh;
+  width:100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 {
+  height: 100vh;
+  width:100vw;
+  display:flex;
+  flex-direction: column;
 }
 
 header{
     text-align: center;
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 10;
 }
 
 .habits {
@@ -65,7 +72,7 @@ header{
 
 /* Dropdown */
 
-ul {
+.maind {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -120,7 +127,7 @@ li.dropdown {
   display: block;
 }
 
-/* Achohol page */
+/* Digestive system page */
 
 .central-box-a {
     color:white;
@@ -129,4 +136,343 @@ li.dropdown {
     justify-content: center;
     align-items: center;
     font-family:'Courier New', Courier, monospace;
+}
+
+.habads {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.subd {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+li {
+  float: left;
+}
+
+li button, .dropb {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+li button:hover, .dropdown1:hover .dropb {
+  background-color: rgba(197, 224, 159, 0.694);
+}
+
+li.dropdown1 {
+  display: inline-block;
+}
+
+.links {
+  display: none;
+  position: absolute;
+  overflow:auto;
+  background-color: #f9f9f992;
+  min-width: 100px;
+  box-shadow: 0px 8px 60px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.links button {
+  color: black;
+  padding: 12px 16px;
+  min-width: 100px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.links button:hover {background-color: #f1f1f1;}
+
+.dropdown1:hover .links {
+  display: block;
+}
+
+.lego {
+  width: 50vw;
+  height: 100vw;
+  opacity:0% ;
+  justify-content: center;
+  margin:auto;
+  position: absoulte;
+}
+
+.liver {
+  width: 17vw;
+  position: relative;
+  top: -49vw;
+  left: 38vw;
+}
+
+.smlg {
+  width: 40vw;
+  position: relative;
+  top: -40vw;
+  left: 30vw;
+}
+
+.stom {
+  width: 18vw;
+  rotate: 45deg;
+  position: relative;
+  top: -45vw;
+  left: 42vw;
+}
+
+.pan {
+  width: 12vw;
+  position: relative;
+  top: -57vw;
+  left: 40vw;
+}
+
+.kdn1 {
+  width: 12vw;
+  position: relative;
+  top: -68vw;
+  left: 52vw;
+}
+
+.kdn2 {
+  width: 12vw;
+  transform: scaleX(-1);
+  position: relative;
+  top: -80vw;
+  left: 34vw;
+}
+
+#info {
+  display: none;
+  padding: 25px;
+  color: rgb(62, 125, 104);
+  width:20%;
+  position:relative;
+  top:-100vw;
+  left: 3vw;
+  background-color: rgba(134, 241, 179, 0.5);
+  border: rgb(62, 125, 104) solid 2px;
+  border-radius: 10%;
+}
+
+#info2 {
+  display: none;
+  padding: 25px;
+  color: rgb(159, 127, 255);
+  width:20%;
+  position: relative;
+  top:-87vw;
+  left: 3vw;
+  background-color: rgba(0, 255, 255, 0.139);
+  border: rgb(159, 127, 255) solid 2px;
+  border-radius: 10%;
+}
+
+.av {
+  height: 0;
+}
+/*Skeletal System Page*/
+.badteeth {
+  width: 10vw;
+  position: relative;
+  bottom: 15.5%;
+  left: 45.7%;
+  visibility: hidden;
+}
+
+.bhalf {
+  width: 12vw;
+  position: relative;
+  bottom: 110.6%;
+  left: 44.8%;
+  padding-bottom: 5%;
+}
+
+.head {
+  width: 12vw;
+  position: relative;
+  top: 5.5%;
+  left: 45%;
+  visibility:visible;
+}
+
+#skinfo {
+  display: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 25px;
+  color: rgb(62, 125, 104);
+  width: 20%;
+  position:relative;
+  top:-120vw;
+  left: 11vw;
+  background-color: rgba(134, 241, 179, 0.5);
+  border: rgb(62, 125, 104) solid 2px;
+  border-radius: 10%;
+}
+
+.mainb {
+  width: 12vw;
+  position: relative;
+  bottom: 16%;
+  left: 45%;
+}
+.larm {
+  width: 9vw;
+  position: relative;
+  bottom: 92%;
+  left: 36%;
+}
+
+.rarm {
+  width: 9vw;
+  position: relative;
+  bottom: 44%;
+  left: 57%;
+}
+
+/*BASIC CSS for habit text- I think it'd be cool to add an animation when you click on one of the drop downs
+if you agree I can work on that. (I agree - SZ)*/
+#habit-text {
+  font-size: 20px;
+  margin: 40px;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  z-index: 100;
+}
+
+.sidebar-title {
+  font-size: 1.3em;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.habits-dropdown {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.dropdown-header {
+  background: rgba(1, 128, 105, 0.8);
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.dropdown-header:hover {
+  background: rgba(1, 128, 105, 1);
+}
+
+.dropdown-toggle {
+  font-size: 1.2em;
+  transition: transform 0.3s;
+}
+
+.dropdown-toggle.open {
+  transform: rotate(180deg);
+}
+
+.sidebar-dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.sidebar-dropdown-content.open {
+  max-height: 500px;
+}
+
+.sidebar-habit-item {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar-habit-item:last-child {
+  border-bottom: none;
+}
+
+.sidebar-habit-item:hover {
+  background: #f9f9f9;
+}
+
+.sidebar-habit-icon {
+  font-size: 1.5em;
+  width: 30px;
+  text-align: center;
+}
+
+.sidebar-habit-name {
+  flex: 1;
+  color: #333;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+.heart-image {
+  display: block;
+  margin: 0 auto;
+  width: 50vw;
+  max-width: 1000px;
+  position: relative;
+  top: -3vh;
+}
+
+/* Reset button outside dropdown */
+.reset-button {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 10px;
+  background-color: rgba(1, 128, 105, 0.8);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.reset-button:hover {
+  background-color: rgba(1, 128, 105, 1);
 }

@@ -1,0 +1,57 @@
+/* Page-specific styles for Brain & Nervous page */
+.organ-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center horizontally */
+  justify-content: center; /* center vertically within available space */
+  gap: 1.2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 1rem;
+  position: relative; /* allow absolutely positioned popups inside */
+}
+
+
+
+.brain .default {
+  width: 60vw;
+  max-width: 500px;
+  margin-left: 50px;
+ 
+}
+.prefrontal {
+  width: 48vw;
+  max-width: 420px;
+}
+
+.nervous {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* Place #info and #info2 at the far left of the viewport */
+#info, #info2 {
+  display: none; /* shown by scripts */
+  position: fixed; /* fixed to the viewport so they remain at the left */
+  left: 1.5rem; /* small gutter from the viewport edge */
+  width: 16vw;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 16px;
+  color: rgb(62, 125, 104);
+  background-color: rgba(134, 241, 179, 0.95);
+  border: rgb(62, 125, 104) solid 2px;
+  border-radius: 10px;
+  text-align: left;
+  z-index: 60;
+}
+
+/* stacking positions */
+#info { top: 12vh; }
+#info2 { top: calc(12vh + 9rem); color: rgb(159, 127, 255); background-color: rgba(0,255,255,0.16); border-color: rgb(159,127,255); }
+
+
+
+
+
