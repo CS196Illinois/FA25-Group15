@@ -17,9 +17,16 @@
 .bowlegs {
   width: 12vw;
   position: relative;
-  bottom: 190.5%;
-  left: 44.8%;
-  padding-bottom: 5%;
+  left: -25.3%;
+  top: 75.5%;
+  visibility: hidden;
+}
+
+.muscle {
+  width: 45vw;
+  position: relative;
+  left: 28%;
+  top: -75%;
   visibility: hidden;
 }
 
@@ -27,22 +34,16 @@
 .head {
   width: 12vw;
   position: relative;
-  top: 5.5%;
-  left: 45%;
-}
-
-.osteop {
-  height: 40vw;
-  width: 20vw;
+  height: 50vw;
+  width: 25vw;
   background-color: black;
   border-radius: 50%;
-  border-color: white;
-  border-width: thick;
-  position: absolute;
-  bottom: -15%;
-  left: 42%;
+  float: right;
+  left: 38%;
+  top: -600%;
   visibility: hidden;
 }
+
 
 #skinfo {
   display: none;
