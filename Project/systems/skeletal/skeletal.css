@@ -1,21 +1,42 @@
-.badteeth {
+.container1 {
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+}
+
+.skull {
   width: 10vw;
   position: relative;
-  bottom: 107px;
-  left: 45.7%;
+  top: -62.7%;
+  left: 45.36%;
+}
+
+.mainbody {
+  width: 34vw;
+  position: relative;
+  top: 17%;
+  left: 11.75%;
+  z-index: -1;
+}
+
+.it {
+  position: relative;
+  width: 11vw;
+  top: -62.4%;
+  left: 33.56%;
   visibility: hidden;
 }
 
-.bhalf {
+.legs {
   width: 12vw;
   position: relative;
-  bottom: 110.6%;
-  left: 44.8%;
-  padding-bottom: 5%;
+  top: 73%;
+  left: -12.6%;
+  z-index: 0;
 }
 
 .bowlegs {
-  width: 12vw;
+  width: 12.9vw;
   position: relative;
   left: -25.3%;
   top: 75.5%;
@@ -31,78 +52,49 @@
 }
 
 
-.head {
-  width: 12vw;
+.ostp {
   position: relative;
-  height: 50vw;
-  width: 25vw;
+  height: 22vw;
+  width: 12vw;
   background-color: black;
   border-radius: 50%;
   float: right;
-  left: 38%;
-  top: -600%;
+  left: -44%;
+  top: -108%;
   visibility: hidden;
 }
 
 
+
+#skinfo {
+  display: none; /* shown by scripts */
+  position: fixed; /* fixed to the viewport so they remain at the left */
+  top: 20rem;
+  left: 1.5rem; /* small gutter from the viewport edge */
+  width: 18vw;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 16px;
+  color: rgb(62, 125, 104);
+  background-color: rgba(134, 241, 179, 0.95);
+  border: rgb(62, 125, 104) solid 2px;
+  border-radius: 10px;
+  text-align: left;
+  z-index: 100;
+}
+
+/*
 #skinfo {
   display: none;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 25px;
   color: rgb(62, 125, 104);
-  width: 23%;
+  width: 30%;
   position:relative;
-  top:-170vw;
-  left: 11vw;
+  top:-120vw;
+  left: 2vw;
   background-color: rgba(134, 241, 179, 0.5);
   border: rgb(62, 125, 104) solid 2px;
   border-radius: 10%;
-}
+}*/
 
-.mainb {
-  width: 12vw;
-  position: relative;
-  bottom: 16%;
-  left: 45%;
-}
-.larm {
-  width: 9vw;
-  position: relative;
-  bottom: 92%;
-  left: 36%;
-}
-
-.rarm {
-  width: 9vw;
-  position: relative;
-  bottom: 44%;
-  left: 57%;
-}
-.muscles {
-  width: 48vw;
-  position: absolute;
-  bottom: -72%;
-  left: 29.5%;
-  visibility: hidden;
-}
-
-
-
-
-.reset-button {
-  width: 100%;
-  margin-top: 10px;
-  padding: 12px 15px;
-  background-color: rgba(1, 128, 105, 0.521);
-  color: #333;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
