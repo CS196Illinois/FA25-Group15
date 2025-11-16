@@ -77,7 +77,7 @@ function selectHabit(habit) {
     head.style.visibility = 'hidden';
     partb.style.visibility = 'hidden';
     boneText.style.display = 'block';
-    boneText.innerHTML = `<b>Possible Consequence ⚠️: </b> <br> Muscle atrophy <br>
+    boneText.innerHTML = `<b>Possible Consequence ⚠️: </b> <br> Muscle Atrophy <br>
     <b>Cause 🔍:</b> Too little exercise leads to weakened muscles and bones <br> 
     <b>Symptoms 🤒:</b> Facial paralysis, muscle difference/weakness, numbmess/tingling in arms/legs, gradual memory loss <br>` 
     /*<b>Suggested exercises:</b> <br>
