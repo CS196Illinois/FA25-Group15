@@ -1,7 +1,9 @@
-
 const boneText = document.getElementById("skinfo");
 const boneText2 = document.getElementById("skinfo2");
 var toShow;
+var toShow2;
+var toShow3;
+var toShow4;
 var toBeHidden;
 var toBeHidden2;
 var toBeHidden3;
@@ -26,8 +28,6 @@ function selectHabit(habit) {
     toShow.style.visibility = 'visible';
     toBeHidden = document.getElementById("bones");
     toBeHidden.style.visibility = 'hidden';
-    toShow = document.getElementById("badteeth");
-    toShow.style.visibility = "visible";
     boneText.style.display = 'block';
     boneText.innerHTML = `<b>Possible Consequence ⚠️: </b> Osteomalacia & Rickets <br>
     <b>Cause 🔍:</b> Hypocalcemia (low calcium levels in blood stream) leads to hyperparathyroidism (overactive parathyroid glands) <br>
@@ -97,12 +97,6 @@ function selectHabit(habit) {
     toShow4.style.visibility = 'visible';
     toBeHidden4 = document.getElementById("skel");
     toBeHidden4.style.visibility = 'hidden';
-    toBeHidden5 = document.getElementById("mainb");
-    toBeHidden5.style.visibility = 'hidden';
-    toBeHidden2 = document.getElementById("bhalf");
-    toBeHidden2.style.visibility = 'hidden';
-    toShow = document.getElementById("osteop");
-    toShow.style.visibility = "visible";
     boneText.style.display = 'block';
     boneText.innerHTML = `<b>Possible Consequences ⚠️: </b> <br> Hypocalcemia & Osteoporosis <br>
     <b>Cause 🔍:</b> Too little calcium due to a calcium deficient diet can lead to weak bones,
@@ -114,15 +108,14 @@ function selectHabit(habit) {
     <b> Consume: </b>
     Calcium-rich foods: <br>
     Dairy 🥛,  turnips 🍠, salmon/canned salmon w/ bones 🍣, sardines 🐟, <br>
-    tuna 🐟, soy products (e.g. tofu) 🥜
-  }
+    tuna 🐟, soy products (e.g. tofu) 🥜*/
+  /*}*/
   // You can add functionality here to show organ effects for the selected habit
   // For example: highlight organs, show info boxes, etc.*/
   
 }
 
 function resetBones() {
-  toShow.style.visibility = 'hidden';
   boneText.style.display = "none";
   if (toBeHidden.style.visibility == 'hidden' && toShow.style.visibility == 'visible') {
     toShow.style.visibility = 'hidden'; 
