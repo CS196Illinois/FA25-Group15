@@ -44,25 +44,26 @@
 }
 
 .muscle {
-  width: 40vw;
+  width: 45vw;
   position: relative;
-  left: 30%;
-  top: -123%;
+  left: 28%;
+  top: -75%;
   visibility: hidden;
 }
 
 
 .ostp {
   position: relative;
-  height: 50vw;
-  width: 25vw;
+  height: 22vw;
+  width: 12vw;
   background-color: black;
   border-radius: 50%;
   float: right;
-  left: 38%;
-  top: -600%;
+  left: -44%;
+  top: -108%;
   visibility: hidden;
 }
+
 
 
 #skinfo {
