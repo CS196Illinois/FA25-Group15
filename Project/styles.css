@@ -26,7 +26,6 @@ header{
     text-align: center;
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    z-index: 10;
 }
 
 .habits {
@@ -464,41 +463,5 @@ if you agree I can work on that. (I agree - SZ)*/
   width: 50vw;
   max-width: 1000px;
   position: relative;
-  top: -3vh;
-}
-
-/* Reset button outside dropdown */
-.reset-button {
-  width: 100%;
-  padding: 12px 20px;
-  margin-top: 10px;
-  background-color: rgba(1, 128, 105, 0.8);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.reset-button:hover {
-  background-color: rgba(1, 128, 105, 1);
-}
-
-.container1 #info {
-  display: none;
-  position: fixed;
-  left: 1.5rem;
-  top: 12vh;
-  width: 16vw;
-  min-width: 200px;
-  max-width: 300px;
-  padding: 16px;
-  color: rgb(62, 125, 104);
-  background-color: rgba(134, 241, 179, 0.95);
-  border: rgb(62, 125, 104) solid 2px;
-  border-radius: 10px;
-  text-align: left;
-  z-index: 60;
+  top: 10vh;
 }
