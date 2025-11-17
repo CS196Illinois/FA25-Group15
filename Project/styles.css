@@ -138,12 +138,7 @@ li.dropdown {
     font-family:'Courier New', Courier, monospace;
 }
 
-.habads {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-}
+
 
 .subd {
   list-style-type: none;
@@ -252,31 +247,7 @@ li.dropdown1 {
   left: 34vw;
 }
 
-#info {
-  display: none;
-  padding: 25px;
-  color: rgb(62, 125, 104);
-  width:20%;
-  position:relative;
-  top:-100vw;
-  left: 3vw;
-  background-color: rgba(134, 241, 179, 0.5);
-  border: rgb(62, 125, 104) solid 2px;
-  border-radius: 10%;
-}
 
-#info2 {
-  display: none;
-  padding: 25px;
-  color: rgb(159, 127, 255);
-  width:20%;
-  position: relative;
-  top:-87vw;
-  left: 3vw;
-  background-color: rgba(0, 255, 255, 0.139);
-  border: rgb(159, 127, 255) solid 2px;
-  border-radius: 10%;
-}
 
 .av {
   height: 0;
@@ -427,7 +398,7 @@ if you agree I can work on that. (I agree - SZ)*/
   top: 12vh;
   width: 16vw;
   min-width: 200px;
-  max-width: 300px;
+  max-width: 400px;
   padding: 16px;
   color: rgb(62, 125, 104);
   background-color: rgba(134, 241, 179, 0.95);
