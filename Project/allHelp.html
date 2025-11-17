@@ -10,16 +10,51 @@
 </head>
 <body>
     <div id="background">
-        <div class="container">
-            <div class="central-box">
-                <main>
-                    <section class="intro">
-                        <h2>General Help Page</h2>
-
-                    </section>
-                </main>
-            </div>
+        <div class="central-box">
+            <main>
+                <section class="intro">
+                    <h2>General Help Page</h2>
+                        
+                </section>
+            </main>
         </div>
+            <div class="dropdown">
+                <button class="button">Chronic Pressure</button>
+                    <div class="content">
+                        <p>thw54oqyh</p>
+                    </div>
+            </div>
+            <div class="dropdown">
+                <button class="button">Excessive Alcohol Intake</button>
+                    <div class="content">
+                        <p>yayaayyayayayyauheaguta48h</p>
+                    </div>
+            </div>
+            <div class="dropdown">
+                <button class="button">Addiction to Digital Devices</button>
+                    <div class="content">
+                        <p>yayaayyayayayyauheaguta48h</p>
+                    </div>
+            </div>
+            <div class="dropdown">
+                <button class="button">Sedentary Lifestyle</button>
+                    <div class="content">
+                        <p>yayaayyayayayyauheaguta48h</p>
+                    </div>
+            </div>
     </div>
+    <script>
+        const dropdowns = document.querySelectorAll('.dropdown');
+
+        dropdowns.forEach(dropdown => {
+            const button = dropdown.querySelector('button');
+            const content = dropdown.querySelector('.content');
+
+            button.addEventListener('click', () => {
+                button.classList.toggle('active');
+                content.classList.toggle('show');
+            });
+        });
+    </script>
 </body>
 </html>
