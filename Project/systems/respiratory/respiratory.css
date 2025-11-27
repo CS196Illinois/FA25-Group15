@@ -65,7 +65,7 @@
   transform: translateY(-50%);
   width: 300px;
   padding: 20px;
-  background-color: rgb(23, 179, 140, 0.3);
+  background-color: rgba(134, 241, 179, 0.95);
   border: 1px solid #17b683;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
