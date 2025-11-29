@@ -34,3 +34,97 @@
   font-weight: 600;
 }
 
+.option {
+  background: #fff;
+  color: rgb(23, 125, 33);
+  font-weight: 500;
+  width: 80%;
+  border: 2px dashed rgb(23, 125, 33);
+  padding: 0.5rem;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 0.4rem;
+  transition: all 0.3s;
+}
+
+.option:hover {
+  background: rgb(34, 177, 48);
+  color: #fff;
+  border: 2px dashed #fff;
+}
+
+.option:focus {
+  background: rgb(26, 137, 37);
+  color: #fff;
+  border: 2px dashed #fff;
+}
+
+.selected {
+  background: rgb(18, 93, 25);
+  color: #fff;
+  border: 2px dashed #fff;
+}
+
+#next {
+  background: #bceab8;
+  color: #073b2f;
+  font-weight: 500;
+  width: 20%;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 0.4rem;
+  box-shadow: #073b2f 4px 4px;
+  cursor: pointer;
+  display: none;
+}
+
+.start {
+  background: #bceab8;
+  color: #073b2f;
+  font-weight: 500;
+  width: 20%;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 0.4rem;
+  box-shadow: #073b2f 4px 4px;
+  cursor: pointer;
+  display: block;
+}
+.results-container {
+        text-align: left;
+    }
+    
+    .results-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    
+    .result-card {
+        background-color: #f9f9f9;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .result-card h3 {
+        margin-top: 0;
+        color: #333;
+        font-size: 20px;
+    }
+    
+    .result-card p {
+        margin: 10px 0;
+        line-height: 1.6;
+        color: #666;
+    }
+    
+    .result-card .score {
+        font-weight: bold;
+        color: #333;
+        margin-top: 15px;
+    }
+    
