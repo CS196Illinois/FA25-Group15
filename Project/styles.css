@@ -138,12 +138,7 @@ li.dropdown {
     font-family:'Courier New', Courier, monospace;
 }
 
-.habads {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-}
+
 
 .subd {
   list-style-type: none;
@@ -252,93 +247,12 @@ li.dropdown1 {
   left: 34vw;
 }
 
-#info {
-  display: none;
-  padding: 25px;
-  color: rgb(62, 125, 104);
-  width:20%;
-  position:relative;
-  top:-100vw;
-  left: 3vw;
-  background-color: rgba(134, 241, 179, 0.5);
-  border: rgb(62, 125, 104) solid 2px;
-  border-radius: 10%;
-}
 
-#info2 {
-  display: none;
-  padding: 25px;
-  color: rgb(159, 127, 255);
-  width:20%;
-  position: relative;
-  top:-87vw;
-  left: 3vw;
-  background-color: rgba(0, 255, 255, 0.139);
-  border: rgb(159, 127, 255) solid 2px;
-  border-radius: 10%;
-}
 
 .av {
   height: 0;
 }
-/*Skeletal System Page*/
-.badteeth {
-  width: 10vw;
-  position: relative;
-  bottom: 15.5%;
-  left: 45.7%;
-  visibility: hidden;
-}
 
-.bhalf {
-  width: 12vw;
-  position: relative;
-  bottom: 110.6%;
-  left: 44.8%;
-  padding-bottom: 5%;
-}
-
-.head {
-  width: 12vw;
-  position: relative;
-  top: 5.5%;
-  left: 45%;
-  visibility:visible;
-}
-
-#skinfo {
-  display: none;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 25px;
-  color: rgb(62, 125, 104);
-  width: 20%;
-  position:relative;
-  top:-120vw;
-  left: 11vw;
-  background-color: rgba(134, 241, 179, 0.5);
-  border: rgb(62, 125, 104) solid 2px;
-  border-radius: 10%;
-}
-
-.mainb {
-  width: 12vw;
-  position: relative;
-  bottom: 16%;
-  left: 45%;
-}
-.larm {
-  width: 9vw;
-  position: relative;
-  bottom: 92%;
-  left: 36%;
-}
-
-.rarm {
-  width: 9vw;
-  position: relative;
-  bottom: 44%;
-  left: 57%;
-}
 
 /*BASIC CSS for habit text- I think it'd be cool to add an animation when you click on one of the drop downs
 if you agree I can work on that. (I agree - SZ)*/
@@ -475,4 +389,21 @@ if you agree I can work on that. (I agree - SZ)*/
 
 .reset-button:hover {
   background-color: rgba(1, 128, 105, 1);
+}
+
+.container1 #info {
+  display: none;
+  position: fixed;
+  left: 1.5rem;
+  top: 12vh;
+  width: 16vw;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 16px;
+  color: rgb(62, 125, 104);
+  background-color: rgba(134, 241, 179, 0.95);
+  border: rgb(62, 125, 104) solid 2px;
+  border-radius: 10px;
+  text-align: left;
+  z-index: 60;
 }
