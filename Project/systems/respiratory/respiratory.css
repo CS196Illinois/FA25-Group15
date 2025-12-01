@@ -1,4 +1,9 @@
+
 /* Lung positioning styles */
+* {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .container1 {
   position: relative;
   min-height: 100vh;
@@ -40,13 +45,13 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   transition: all 0.3s ease;
-  text-align: left;
+  text-align: center;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .reset-button:hover {
@@ -65,10 +70,9 @@
   transform: translateY(-50%);
   width: 300px;
   padding: 20px;
-  background-color: rgb(23, 179, 140, 0.3);
-  border: 1px solid #17b683;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(134, 241, 179, 0.5);
+  border: rgb(62, 125, 104) solid 2px;
+  border-radius: 10%;
   opacity: 1;
   transition: opacity 0.3s ease;
 }
@@ -76,13 +80,10 @@
 .description-box h3 {
   margin-top: 0;
   margin-bottom: 10px;
-  color: #333;
+  color: rgb(62, 125, 104);
   font-size: 20px;
 }
 
 .description-box p {
   margin: 0;
-  color: #000000;
-  font-size: 14px;
-  line-height: 1.6;
 }

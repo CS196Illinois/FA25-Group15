@@ -18,31 +18,69 @@ function showDamagedLung(habit) {
   if (habit === 'drugs') {
     imagePath = '../../images/assets-lung/lung-drugs.png';
     title = '💊 Drug use';
-    description = 'Smoking marijuana clearly damages the human lung. Research shows that smoking marijuana causes chronic bronchitis and marijuana smoke has been shown to injure the cell linings of the large airways, which could explain why smoking marijuana leads to symptoms such as chronic cough, phlegm production, wheeze, and acute bronchitis.';
+    description = `
+    <p><strong>Possible Consequence ⚠️: </strong> Chronic bronchitis, lung infections, or acute lung injury </p>
+    <p><strong>Cause 🔍: </strong> Inhaled drugs (like marijuana or cocaine) damage airway lining and immune cells, inflaming and scarring the lungs. </p>
+    <p><strong>Symptoms 🤒: </strong> Persistent cough, mucus buildup, wheezing, chest pain, shortness of breath </p>
+    <p><strong>More: </strong> Repeated inhalation weakens your lung defense and increases infection risk — every puff adds up! </p>
+    <p><strong>*Here drug use refers to the excessive use of marijuana, cocaine and crack</strong></p>
+    `;
   } else if (habit === 'alcohol') {
     imagePath = '../../images/assets-lung/lung-alcohol.png';
     title = '🍺 Alcohol';
-    description = 'Normally, the fine hairs (i.e., cilia) on the cells that line the respiratory tract work with the mucociliary apparatus—which is basically the body’s first line of cellular defense against various pathogens that lead to infection. Together, they remove inhaled particles, toxins, and debris from the body. However, chronic alcohol consumption alters the function of this apparatus.3 Thus, those with an alcohol use disorder (AUD) have increased susceptibility to respiratory pathogens, which can lead to various infections such as pneumonia, tuberculosis, Respiratory Syncytial Virus (RSV).'
+    description = `
+    <p><strong>Possible Consequence ⚠️: </strong> sPneumonia, lung inflammation, or ARDS (acute respiratory distress syndrome) </p>
+    <p><strong>Cause 🔍: </strong> Alcohol weakens lung immunity, damages airway-clearing cells, and depletes antioxidants that protect lung tissue. </p>
+    <p><strong>Symptoms 🤒: </strong> Frequent chest infections, heavy cough, shortness of breath </p>
+    <p><strong>More: </strong> Heavy drinking doubles your risk of severe lung infections — protect your lungs by cutting back. </p>
+    `;
   } else if (habit === 'smoking') {
     imagePath = '../../images/assets-lung/lung-smoke.png';
     title = '🚬 Smoking';
-    description = 'Cigarette smoking is the leading preventable cause of lung disease. Smoke chronically inflames and thickens airways, producing chronic bronchitis, while toxic chemicals destroy alveoli, leading to emphysema and impaired gas exchange. This progression defines COPD. Smoking also raises lung cancer risk manyfold and worsens asthma outcomes. Vaping, though marketed as safer, still exposes the lungs to heated aerosols and flavoring chemicals. Studies link vaping to airway irritation, oxidative stress, and in some cases severe EVALI (e-cigarette lung injury). While long-term cancer risk is still being studied, vaping clearly contributes to respiratory inflammation and worsens asthma or bronchitis symptoms. Both smoking and vaping impair mucociliary clearance, raising infection risk.Lungs of a smoker will look Gray or black, hyperinflated, have patches of inflammation, diaphragm muscle loss';
+    description = `
+    <p><strong>Possible Consequence ⚠️: </strong> COPD, emphysema, lung cancer, or “popcorn lung” (from vaping) </p>
+    <p><strong>Cause 🔍: </strong> Smoke and vapor destroy lung tissue, paralyze airway cilia, and fill lungs with tar or chemical toxins. </p>
+    <p><strong>Symptoms 🤒: </strong> something </p>
+    <p><strong>More: </strong> CThe longer you smoke or vape, the faster your lungs deteriorate — quitting now can reverse early damage! </p>
+    `;
   } else if (habit === 'doomscrolling') {
-    imagePath = '../../images/assets-lung/lung-smoke.png';
+    imagePath = '../../images/assets-lung/lung-doomscrolling.png';
     title = '📱 Doomscrolling';
-    description = 'its bad';
+    description = `
+    <p><strong>Possible Consequence ⚠️: </strong> Reduced lung capacity and fitness </p>
+    <p><strong>Cause 🔍: </strong> Sitting for hours weakens breathing muscles, reduces deep breathing, and lowers oxygen efficiency. </p>
+    <p><strong>Symptoms 🤒: </strong> Feeling winded, shallow breathing, poor stamina </p>
+    <p><strong>More: </strong> Move every hour! Deep breathing and posture breaks keep lungs strong and active. </p>
+    <p><strong>*This also applies to phone or gaming addiction.</strong></p>
+    `;
   } else if (habit === 'lowmovement') {
-    imagePath = '../../images/assets-lung/lung-smoke.png';
+    imagePath = '../../images/assets-lung/lung-lowmovement.png';
     title = '🛏️ Low Movement';
-    description = 'its bad';
+    description = `
+    <p><strong>Possible Consequence ⚠️: </strong> Weakened lungs and higher infection risk </p>
+    <p><strong>Cause 🔍: </strong> Lack of exercise reduces lung strength, limits oxygen intake, and slows mucus clearance. </p>
+    <p><strong>Symptoms 🤒: </strong> Shortness of breath, chest tightness, low energy </p>
+    <p><strong>More: </strong> Even light activity like walking or stretching can boost lung health daily! </p>
+    <p><strong>Having a sedentary lifestyle can lead to the same consequences </strong></p>
+    `;
   } else if (habit === 'overeating') {
-    imagePath = '../../images/assets-lung/lung-smoke.png';
-    title = '🍽️ Overeating';
-    description = 'its bad';
+    imagePath = '../../images/assets-lung/lung-overeating.png';
+    title = '🍽️ Overeating/Undereating';
+    description = `
+    <p><strong>Possible Consequence ⚠️: </strong> Breathing problems or lung weakness </p>
+    <p><strong>Cause 🔍: </strong> Overeating adds pressure on lungs, while undereating weakens respiratory muscles and immune function. </p>
+    <p><strong>Symptoms 🤒: </strong> Shortness of breath, fatigue, more infections </p>
+    <p><strong>More: </strong> Balanced meals help your lungs function smoothly — nourish, don't overload! </p>
+    `;
   } else if (habit === 'sleep') {
-    imagePath = '../../images/assets-lung/lung-smoke.png';
+    imagePath = '../../images/assets-lung/lung-sleep.png';
     title = '💤 Lack of Sleep';
-    description = 'its bad';
+    description = `
+    <p><strong>Possible Consequence ⚠️: </strong> Weakened lung immunity and poor breathing control </p>
+    <p><strong>Cause 🔍: </strong> Inadequate sleep increases inflammation, reduces repair time, and weakens respiratory response. </p>
+    <p><strong>Symptoms 🤒: </strong> something </p>
+    <p><strong>More: </strong> Sleep heals not your lungs as well as other organs, aim to have at least 7 hours of sleep every night. </p>
+    `;
   }
   
   console.log('Setting image path to:', imagePath);
@@ -50,7 +88,7 @@ function showDamagedLung(habit) {
 
   //add description box
   descriptionTitle.textContent = title;
-  descriptionText.textContent = description;
+  descriptionText.innerHTML = description;
   
   damagedLung.classList.add('show');
   //make normal lung disappear
