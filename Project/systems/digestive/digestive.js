@@ -12,11 +12,31 @@ const habitText = document.getElementById("info");
 const newp = document.createElement('p');
 const newp2 = document.createElement('p');
 
+//digestive system images
+const doomdigImg = document.querySelector('.doomdig');
+const healthydigImg = document.querySelector('.healthydig');
+const alcdigImg = document.querySelector('.alcdig');
+const drugdigImg = document.querySelector('.drugdig');
+
+//hide all images initially except healthy
+function hideAllImages() {
+  doomdigImg.style.display = 'none';
+  healthydigImg.style.display = 'none';
+  alcdigImg.style.display = 'none';
+  drugdigImg.style.display = 'none';
+}
+hideAllImages();
+healthydigImg.style.display = 'block';
+
 // Handle habit selection
 function selectHabit(habit) {
   console.log('Selected habit:', habit);
+  hideAllImages();
   // You can add functionality here to show organ effects for the selected habit
   if (habit === 'smoking') {
+
+    drugdigImg.style.display = 'block';
+
     habitText.style.display = 'block';
     newp.textContent = "Drug indulgence is a destructive habit that takes a severe toll on both the body and mind. Many substances, including stimulants, opioids, and marijuana, cause long-term damage to vital organs and systems." +  
     "Stimulants like cocaine and meth can cause internal issues such as ulcers, tissue death" + 
@@ -28,6 +48,9 @@ function selectHabit(habit) {
   }
   
   if (habit === "alcohol") {
+
+    alcdigImg.style.display = 'block';
+
     habitText.style.display = 'block';
     newp.textContent = "Drinking alcohol might seem harmless or even relaxing at first, but it’s actually a habit that takes a serious toll on nearly every part of your body. Long-term alcohol use can lead to cancers of the esophagus, throat, larynx, liver, colon," +
     "and even the rectovaginal area. It damages vital organs like the liver and kidneys, raises blood pressure, and irritates the stomach lining while inflaming the pancreas. It also disrupts metabolism, causes malnutrition and weight loss, and even damages your DNA — harm that can’t easily be undone." +
@@ -37,6 +60,9 @@ function selectHabit(habit) {
   }
   
   if (habit === "doomscrolling") {
+
+    doomdigImg.style.display = 'block';
+
     habitText.style.display = 'block';
     newp.textContent = "Doomscrolling-a habit of endlessly consuming negative or distressing content online—can take a serious toll on both mental and physical health. Prolonged screen time, especially among children and teens, has been linked to disruptions in metabolism" + 
     "and an increased risk of developing metabolic syndrome, which includes conditions such as high cholesterol, high blood pressure, elevated blood sugar, and high triglyceride levels. These health problems often stem from extended periods of inactivity" +
@@ -61,7 +87,16 @@ document.addEventListener('click', function(event) {
     }
   }
 });
-
+//reset digestive to normal
+function resetDig() {
+  console.log('Reset to normal digestive');
+  hideAllImages();
+  healthydigImg.style.display = 'block';
+  habitText.innerHTML = '';
+  habitText2.innerHTML = '';
+  habbitText.style.display = 'none';
+  habbitText2.style.displya = 'none';
+}
 
 
 button3.addEventListener("click", function() {
