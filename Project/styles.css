@@ -251,50 +251,6 @@ li.dropdown1 {
   position: absoulte;
 }
 
-.liver {
-  width: 17vw;
-  position: relative;
-  top: -49vw;
-  left: 38vw;
-}
-
-.smlg {
-  width: 40vw;
-  position: relative;
-  top: -40vw;
-  left: 30vw;
-}
-
-.stom {
-  width: 18vw;
-  rotate: 45deg;
-  position: relative;
-  top: -45vw;
-  left: 42vw;
-}
-
-.pan {
-  width: 12vw;
-  position: relative;
-  top: -57vw;
-  left: 40vw;
-}
-
-.kdn1 {
-  width: 12vw;
-  position: relative;
-  top: -68vw;
-  left: 52vw;
-}
-
-.kdn2 {
-  width: 12vw;
-  transform: scaleX(-1);
-  position: relative;
-  top: -80vw;
-  left: 34vw;
-}
-
 
 
 .av {

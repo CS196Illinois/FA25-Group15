@@ -30,8 +30,25 @@
   gap: 0.6rem;
 }
 
+#descriptionBox{
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  padding: 20px;
+  color: rgb(62, 125, 104);
+  background-color: rgba(134, 241, 179, 0.95);
+  border: rgb(62, 125, 104) solid 2px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+
 /* Place #info and #info2 at the far left of the viewport */
-#info, #info2 {
+#info, #info2  {
   display: none; /* shown by scripts */
   position: fixed; /* fixed to the viewport so they remain at the left */
   left: 1.5rem; /* small gutter from the viewport edge */
