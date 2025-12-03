@@ -22,7 +22,8 @@ function toggleSidebarDropdown() {
 // Handle habit selection
 function selectHabit(habit) {
   console.log('Selected habit:', habit);
-  
+  boneText2.style.display = "none";
+
   if (habit == "vitdef") {
     toShow = document.getElementById("blargh");
     toShow.style.visibility = 'visible';
@@ -117,6 +118,7 @@ function selectHabit(habit) {
 
 function resetBones() {
   boneText.style.display = "none";
+  boneText2.style.display = "block";
   if (toBeHidden.style.visibility == 'hidden' && toShow.style.visibility == 'visible') {
     toShow.style.visibility = 'hidden'; 
     toBeHidden.style.visibility = 'visible';

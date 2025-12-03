@@ -83,18 +83,22 @@
   z-index: 100;
 }
 
-/*
-#skinfo {
-  display: none;
+
+#skinfo2 {
+  display: block;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 25px;
+  position: fixed; /* fixed to the viewport so they remain at the left */
+  top: 20rem;
+  left: 1.5rem; /* small gutter from the viewport edge */
+  width: 18vw;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 16px;
   color: rgb(62, 125, 104);
-  width: 30%;
-  position:relative;
-  top:-120vw;
-  left: 2vw;
-  background-color: rgba(134, 241, 179, 0.5);
+  background-color: rgba(134, 241, 179, 0.95);
   border: rgb(62, 125, 104) solid 2px;
-  border-radius: 10%;
-}*/
+  border-radius: 10px;
+  text-align: left;
+  z-index: 100;
+}
 
