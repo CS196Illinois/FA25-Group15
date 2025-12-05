@@ -436,3 +436,21 @@ if you agree I can work on that. (I agree - SZ)*/
   z-index: 60;
 }
 
+<<<<<<< HEAD
+=======
+#descriptionBox{
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  padding: 20px;
+  color: rgb(62, 125, 104);
+  background-color: rgba(134, 241, 179, 0.95);
+  border: rgb(62, 125, 104) solid 2px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+>>>>>>> Cardiovascular_Jason
