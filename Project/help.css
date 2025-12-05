@@ -63,6 +63,7 @@
   background: rgb(34, 177, 48);
   color: #fff;
   border: 2px dashed #fff;
+  cursor: pointer;
 }
 
 .option:focus {
