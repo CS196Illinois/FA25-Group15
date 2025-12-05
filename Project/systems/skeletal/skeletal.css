@@ -1,0 +1,104 @@
+.container1 {
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+}
+
+.skull {
+  width: 10vw;
+  position: relative;
+  top: -62.7%;
+  left: 45.36%;
+}
+
+.mainbody {
+  width: 34vw;
+  position: relative;
+  top: 17%;
+  left: 11.75%;
+  z-index: -1;
+}
+
+.it {
+  position: relative;
+  width: 11vw;
+  top: -62.4%;
+  left: 33.56%;
+  visibility: hidden;
+}
+
+.legs {
+  width: 12vw;
+  position: relative;
+  top: 73%;
+  left: -12.6%;
+  z-index: 0;
+}
+
+.bowlegs {
+  width: 12.9vw;
+  position: relative;
+  left: -25.3%;
+  top: 75.5%;
+  visibility: hidden;
+}
+
+.muscle {
+  width: 45vw;
+  position: relative;
+  left: 28%;
+  top: -75%;
+  visibility: hidden;
+}
+
+
+.ostp {
+  position: relative;
+  height: 22vw;
+  width: 12vw;
+  background-color: black;
+  border-radius: 50%;
+  float: right;
+  left: -44%;
+  top: -108%;
+  visibility: hidden;
+}
+
+
+
+#skinfo {
+  display: none; /* shown by scripts */
+  position: fixed; /* fixed to the viewport so they remain at the left */
+  top: 20rem;
+  left: 1.5rem; /* small gutter from the viewport edge */
+  width: 18vw;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 16px;
+  color: rgb(62, 125, 104);
+  background-color: rgba(134, 241, 179, 0.95);
+  border: rgb(62, 125, 104) solid 2px;
+  border-radius: 10px;
+  text-align: left;
+  z-index: 100;
+}
+
+
+#skinfo2 {
+  display: block;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: fixed; /* fixed to the viewport so they remain at the left */
+  top: 20rem;
+  left: 1.5rem; /* small gutter from the viewport edge */
+  width: 18vw;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 16px;
+  color: rgb(62, 125, 104);
+  background-color: rgba(134, 241, 179, 0.95);
+  border: rgb(62, 125, 104) solid 2px;
+  border-radius: 10px;
+  text-align: left;
+  z-index: 100;
+}
+

@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Musculoskeletal System</title>
+  <title>Skeletal System</title>
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../skeletal/skeletal.css">
 </head>
 
 <body>
@@ -13,34 +14,24 @@
     <div class="container1">
       <header>
         <ul class = "maind">
-          <li><a href="../../index.html"><h2 style="margin-right: 10px;">Home</h2></a></li>
-          <li class = "dropdown"><a href="javascript:void(0)" class="dropb"><h2 style="margin-right: 10px;">Habits</h2></a>
+          <li><a href="../../index.html"><h2 style="margin-right: 10px; color:black">Home</h2></a></li>
+          <li class = "dropdown"><a href="javascript:void(0)" class="dropb"><h2 style="margin-right: 10px;">Systems</h2></a>
             <div class = "links">
-              <a href="../digestive/digestive.html">Digestive</a>
-              <a href="../respiratory/respiratory.html">Respiratory</a>
-              <a href="../skeletal/skeletal.html">Musculoskeletal</a>
               <a href="../Brain/brian.html">Brain & Nervous</a>
-              <a href="cardiovascular.html">Cardiovascular</a>
-            </div>
+              <a href="../cardiovascular/cardiovascular.html">Cardiovascular</a>
+              <a href="../digestive/digestive.html">Digestive</a>
+              <a href="../skeletal/skeletal.html">Musculoskeletal</a>
+              <a href="../respiratory/respiratory.html">Respiratory</a>
+            </div>  
           </li>
-          <li><a href="../../help.html"><h2 style="margin-right: 10px;">Help</h2></a></li>
+          <li class = "dropdown"><a href="javascript:void(0)" class="dropb"><h2 style="margin-right: 10px;">Help</h2></a>
+          <div class = "links">
+            <a href="../../allHelp.html">All Help</a>
+            <a href="../../personalHelp.html">Personal Help</a>
+          </div>
+          </li>
         </ul>
       </header>
-
-      <div class = "habads">
-        <h1>Your bad </h1>
-        <ul class = "subd" >
-          <li class = "dropdown1"><a href="javascript:void(0)" class="dropb"><h1 style="margin-right: 10px;">habit</h1></a>
-            <div class = "links">
-              <button id = "vdbutton">Not Consuming Vitamin D</button>
-              <button id = "cautton">Not Consuming Calcium</button>
-              <button id = "drbutton">Excessive Drinking + Smoking</button>
-              <button id = "sedbutton">Sedentary Lifestyle</button>
-            </div>
-          </li>
-        </ul>
-        <h1>is...</h1>
-      </div>
 
       <!-- Sidebar Dropdown -->
       <div class="sidebar">
@@ -70,18 +61,28 @@
             </div>
           </div>
         </div>
+        <button class="reset-button" onclick="resetBones()">🔄 Reset</button>
       </div>
-
       <!-- Organ images will go here when you add them -->
-     <a class = "av" href="javascript:void(0);" onclick="hs('skinfo');"><img class = "badteeth" id ="badteeth" src ="../../images/badteeth.png" /></a>
-     <img class = "head" id = "head" src = "../../images/download.png"/>
-     <img class = "badteeth" id ="badteeth" src ="../../images/badteeth.png"/>
-     <img class = "mainb" src = "../../images/mainskeleton.png"/>
-     <img class = "rarm" src = "../../images/rightArm.png"/>
-     <img class = "larm" src = "../../images/leftarm.png"/>
-     <img class = "bhalf" src = "../../images/bottom.png"/>
-      <div id  = "skinfo"></div>
-      <div id = "skinfo2"></div>
+      <div class = "skeleton" id = "skel">
+        <img class = "skull" id = "sk" src = "../../images/skull.png"> 
+        <img class = "it" id = "ickyteeth" src = "../../images/badteeth.png">
+        <img class = "mainbody" id = "mainb" src = "../../images/mainskel.png">
+        <img class = "legs" id = "bones" src = "../../images/bottom.png">
+        <img class = "bowlegs"  id = "blargh" src = "../../images/bow.png"> 
+      </div>
+      <div>
+        <img class = "ostp" id = "osteo" src = "../../images/Osteoporosis.jpeg"> 
+      </div>    
+      <div>
+        <img class = "muscle" id = "atr" src = "../../images/muscles.png">
+      </div>
+      
+     <div id  = "skinfo"></div>
+     <div id = "skinfo2">
+      <h2> Select a Habit </h2>
+       Click on a habit to see how it affects the skeletal system.
+     </div>
     </div>
   </div>
 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Help Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+    <div id="background">
+        <div class="container">
+        <header>
+        <ul class = "maind">
+          <li><a href="../Project/index.html"><h2 style="margin-right: 10px;color:black;">Home</h2></a></li>
+          <li class = "dropdown"><a href="javascript:void(0)" class="dropb"><h2 style="margin-right: 10px;">Systems</h2></a>
+            <div class = "links">
+              <a href="../Project/systems/Brain/brian.html">Brain & Nervous</a>
+              <a href="../Project/systems/cardiovascular/cardiovascular.html">Cardiovascular</a>
+              <a href="../Project/systems/digestive/digestive.html">Digestive</a>
+              <a href="../Project/systems/respiratory/respiratory.html">Respiratory</a>
+              <a href="../Project/systems/skeletal/skeletal.html">Skeletal</a>
+            </div>
+          </li>
+          <li class = "dropdown"><a href="javascript:void(0)" class="dropb"><h2 style="margin-right: 10px;">Help</h2></a>
+          <div class = "links">
+            <a href="../Project/allHelp.html">All Help</a>
+            <a href="../Project/personalHelp.html">Personal Help</a>
+          </div>
+          </li>
+        </ul>
+      </header>
+            <div class="central-box">
+                <main>
+                    <section class="intro">
+                        <h2>Let's start with a quick questionnaire.</h2>
+                        <p id = "question">What habits do you want to focus on?</p>
+                        <div id = "options1">
+                            <button class = "option">Smoking</button>
+                            <button class = "option">Drinking</button>
+                            <button class = "option">Doomscrolling</button>
+                        </div>
+                        <button id = "next">Next</button>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="help.js"></script>
+</body>
+</html>

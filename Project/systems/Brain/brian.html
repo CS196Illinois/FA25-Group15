@@ -14,35 +14,26 @@
     <div class="container1">
       <header>
         <ul class = "maind">
-          <li><a href="../../index.html"><h2 style="margin-right: 10px;">Home</h2></a></li>
+          <li><a href="../../index.html"><h2 style="margin-right: 10px; color:black;">Home</h2></a></li>
           <li class = "dropdown"><a href="javascript:void(0)" class="dropb"><h2 style="margin-right: 10px;">Systems</h2></a>
             <div class = "links">
+              <a href="../Brain/brian.html">Brain & Nervous</a>
+              <a href="../cardiovascular/cardiovascular.html">Cardiovascular</a>
               <a href="../digestive/digestive.html">Digestive</a>
               <a href="../respiratory/respiratory.html">Respiratory</a>
               <a href="../skeletal/skeletal.html">Skeletal</a>
-              <a href="../Brain/brian.html">Brain & Nervous</a>
-              <a href="../cardiovascular/cardiovascular.html">Cardiovascular</a>
+              
             </div>
           </li>
-          <li><a href="../../help.html"><h2 style="margin-right: 10px;">Help</h2></a></li>
+         <li class = "dropdown"><a href="javascript:void(0)" class="dropb"><h2 style="margin-right: 10px;">Help</h2></a>
+          <div class = "links">
+            <a href="../../allHelp.html">All Help</a>
+            <a href="../../personalHelp.html">Personal Help</a>
+          </div>
+        </li>
         </ul>
       </header>
 
-      <div class = "habads">
-        <h1>Your bad </h1>
-        <ul class = "subd" >
-          <li class = "dropdown1"><a href="javascript:void(0)" class="dropb"><h1 style="margin-right: 10px;">habit</h1></a>
-            <div class = "links">
-              <button id = "smbutton">chronic pressure</button>
-              <button id = "abutton">Alcohol</button>
-              <button id = "slbutton">Sedentary Lifestyle</button>
-              <button id = "psbutton">Poor Sleep</button>
-              <button id = "ecbutton">Addiction to digital devices</button>
-            </div>
-          </li>
-        </ul>
-        <h1>is...</h1>
-      </div>
 
       <!-- Sidebar Dropdown -->
       <div class="sidebar">
@@ -90,10 +81,15 @@
     <img id="prefrontalImage" src="../../images/prefrontal(impacted).png" alt="Prefrontal" class="prefrontal" style="display: none;" aria-hidden="true">
       <div id="info"></div>
     </div>
-  </div>    
+  </div>
+
+<div class="description-box" id="descriptionBox">
+  <h3 id="descriptionTitle">Select a Habit</h3>
+  <p id="descriptionText">Click on a habit to see how it affects the brain.</p>
+</div>    
 
   <script src="../../index.js"></script>
-  <script src="../../style.css"></script>
+  <script src="../../brian.js"></script>
   <script src="brain.js"></script>
 </body>
 </html>
