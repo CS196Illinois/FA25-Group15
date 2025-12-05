@@ -8,6 +8,18 @@ html, body {
   background-size: cover;
 }
 
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-prime-bold {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .container {
   height: 100vh;
   width:100vw;
