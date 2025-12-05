@@ -307,6 +307,7 @@ if you agree I can work on that. (I agree - SZ)*/
 }
 
 .habits-dropdown {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -419,6 +420,7 @@ if you agree I can work on that. (I agree - SZ)*/
 
 .container1 #info {
   display: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: fixed;
   left: 1.5rem;
   top: 12vh;
@@ -433,3 +435,4 @@ if you agree I can work on that. (I agree - SZ)*/
   text-align: left;
   z-index: 60;
 }
+
