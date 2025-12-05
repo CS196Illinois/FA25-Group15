@@ -20,6 +20,16 @@ html, body {
   font-style: normal;
 }
 
+.noto-sans {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
 .container {
   height: 100vh;
   width:100vw;
