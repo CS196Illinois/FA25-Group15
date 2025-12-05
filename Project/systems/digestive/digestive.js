@@ -29,7 +29,7 @@ hideAllImages();
 healthydigImg.style.display = 'block';
 healthydigImg.style.marginTop = '-18vw';
 habitText.style.display = 'block';
-habitText.innerHTML = '<strong style="font-size: 24px;">Select a habit</strong><p>Choose a habit from the sidebar to learn about its effects on your digestive system.</p>'
+habitText.innerHTML = '<h3>Select a habit</h3><p>Choose a habit from the sidebar to learn about its effects on your digestive system.</p>'
 habitText.style.marginTop = '100px';
 
 // Handle habit selection
