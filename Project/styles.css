@@ -447,6 +447,8 @@ if you agree I can work on that. (I agree - SZ)*/
   background-color: rgba(134, 241, 179, 0.95);
   border: rgb(62, 125, 104) solid 2px;
   border-radius: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   opacity: 1;
   transition: opacity 0.3s ease;
