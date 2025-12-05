@@ -161,7 +161,7 @@ li a, .dropb {
 }
 
 li a:hover, .dropdown:hover .dropb {
-  background-color: rgba(197, 224, 159, 0.694);
+  text-shadow: 4px 4px 3.5px rgb(88, 164, 86);
 }
 
 li.dropdown {
