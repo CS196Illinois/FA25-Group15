@@ -1,0 +1,17 @@
+.central-box .intro {
+  width: 80%;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color:white;
+  border-radius: 12px;
+  text-align: left;
+  color: #073b2f;
+}
+
+.central-box .intro p {
+  margin: 0.6rem 0;
+  padding: 0.2rem 0.6rem;
+  font-weight: 600;
+  color: black;
+}
