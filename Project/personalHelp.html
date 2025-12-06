@@ -6,27 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal Help Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="images/circle.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="help.css">
 </head>
 <body>
     <div id="background">
         <div class="container">
-        <header>
+        <header class = "noto-sans">
         <ul class = "maind">
-          <li><a href="/FA25-Group15/Project/index.html"><h2 style="margin-right: 10px;color:black;">Home</h2></a></li>
+          <li><a href="../Project/index.html"><h2 style="margin-right: 10px;color:black;">Home</h2></a></li>
           <li class = "dropdown"><a href="javascript:void(0)" class="dropb"><h2 style="margin-right: 10px;">Systems</h2></a>
             <div class = "links">
-              <a href="/FA25-Group15/Project/systems/Brain/brian.html">Brain & Nervous</a>
-              <a href="/FA25-Group15/Project/systems/cardiovascular/cardiovascular.html">Cardiovascular</a>
-              <a href="/FA25-Group15/Project/systems/digestive/digestive.html">Digestive</a>
-              <a href="/FA25-Group15/Project/systems/respiratory/respiratory.html">Respiratory</a>
-              <a href="/FA25-Group15/Project/systems/skeletal/skeletal.html">Skeletal</a>
+              <a href="../Project/systems/Brain/brian.html">Brain & Nervous</a>
+              <a href="../Project/systems/cardiovascular/cardiovascular.html">Cardiovascular</a>
+              <a href="../Project/systems/digestive/digestive.html">Digestive</a>
+              <a href="../Project/systems/respiratory/respiratory.html">Respiratory</a>
+              <a href="../Project/systems/skeletal/skeletal.html">Skeletal</a>
             </div>
           </li>
           <li class = "dropdown"><a href="javascript:void(0)" class="dropb"><h2 style="margin-right: 10px;">Help</h2></a>
           <div class = "links">
-            <a href="/FA25-Group15/Project/allHelp.html">All Help</a>
-            <a href="/FA25-Group15/Project/personalHelp.html">Personal Help</a>
+            <a href="../Project/allHelp.html">All Help</a>
+            <a href="../Project/personalHelp.html">Personal Help</a>
           </div>
           </li>
         </ul>
@@ -38,9 +43,8 @@
                 <main>
                   
                     <section class="intro">
-                        
-                        <h2>Let's start with a quick questionnaire.</h2>
-                        <p id = "question">What habits do you want to focus on?</p>
+                        <h2 class = "courier-prime-regular">Personalized Health Quiz</h2>
+                        <p id = "question" class = "courier-prime-regular">What habits do you want to focus on?</p>
                         <div id = "options1">
                             
                             <button class = "option">Doomscrolling 📱</button>

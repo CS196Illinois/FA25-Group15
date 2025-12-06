@@ -31,6 +31,7 @@ function selectHabit(habit) {
   console.log('Selected habit:', habit);
   const heartImage = document.getElementById('heartImage');
   const info = document.getElementById('info');
+  const descriptionBox = document.getElementById('descriptionBox');
   
   // Change the heart image
   if (heartImage && heartImages[habit]) {
@@ -42,6 +43,11 @@ function selectHabit(habit) {
     info.innerHTML = habitInfo[habit] || habitInfo.default;
     info.style.display = 'block';
   }
+
+  // Hide the "Select a Habit" box once a habit is clicked 👇
+  if (descriptionBox) {
+    descriptionBox.style.display = 'none';
+  }
 }
 
 // Reset to normal heart
@@ -50,6 +56,7 @@ function resetHeart() {
   const heartImage = document.getElementById('heartImage');
   const info = document.getElementById('info');
   const info2 = document.getElementById('info2');
+  const descriptionBox = document.getElementById('descriptionBox');
   
   if (heartImage) {
     heartImage.src = heartImages.normal;
@@ -57,6 +64,10 @@ function resetHeart() {
   
   if (info) info.style.display = 'none';
   if (info2) info2.style.display = 'none';
+
+  if (descriptionBox) {
+    descriptionBox.style.display = 'block';
+  }
 }
 
 // Close dropdown when clicking outside

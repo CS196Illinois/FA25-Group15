@@ -6,7 +6,31 @@ html, body {
   background-image: url("images/delightful-digital-aesthetic-teal-smudgy-roses-8gbf7hv039qx12o4.jpg");
   background-repeat: repeat;
   background-size: cover;
+  scrollbar-width: none;
+
 }
+
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-prime-bold {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.noto-sans {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 
 .container {
   height: 100vh;
@@ -139,7 +163,7 @@ li a, .dropb {
 }
 
 li a:hover, .dropdown:hover .dropb {
-  background-color: rgba(197, 224, 159, 0.694);
+  text-shadow: 4px 4px 3.5px rgb(88, 164, 86);
 }
 
 li.dropdown {
@@ -285,6 +309,7 @@ if you agree I can work on that. (I agree - SZ)*/
 }
 
 .habits-dropdown {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -397,10 +422,11 @@ if you agree I can work on that. (I agree - SZ)*/
 
 .container1 #info {
   display: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: fixed;
   left: 1.5rem;
   top: 12vh;
-  width: 16vw;
+  width: 20vw;
   min-width: 200px;
   max-width: 400px;
   padding: 16px;
@@ -410,4 +436,22 @@ if you agree I can work on that. (I agree - SZ)*/
   border-radius: 10px;
   text-align: left;
   z-index: 60;
+}
+
+#descriptionBox{
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  padding: 20px;
+  color: rgb(62, 125, 104);
+  background-color: rgba(134, 241, 179, 0.95);
+  border: rgb(62, 125, 104) solid 2px;
+  border-radius: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }

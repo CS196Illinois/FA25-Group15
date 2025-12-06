@@ -7,35 +7,40 @@
     <title>General Help Page</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="allHelp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/circle.png">
 </head>
 <body>
     
     
 <div id="background">
     <div class="container1">
-        <header>
+        <header class = "noto-sans">
         <ul class = "maind">
-          <li><a href="/FA25-Group15/Project/index.html"><h2 style="margin-right: 10px; color:black;">Home</h2></a></li>
+          <li><a href="../Project/index.html"><h2 style="margin-right: 10px; color:black;">Home</h2></a></li>
           <li class = "dropdown"><a href="javascript:void(0)"><h2 style="margin-right: 10px;color:black;">Systems</h2></a>
             <div class = "links">
-              <a href="/FA25-Group15/Project/systems/Brain/brian.html">Brain & Nervous</a>
-              <a href="/FA25-Group15/Project/systems/cardiovascular/cardiovascular.html">Cardiovascular</a>
-              <a href="/FA25-Group15/Project/systems/digestive/digestive.html">Digestive</a>
-              <a href="/FA25-Group15/Project/systems/skeletal/skeletal.html">Musculoskeletal</a>
-              <a href="/FA25-Group15/Project/systems/respiratory/respiratory.html">Respiratory</a>
+              <a href="../Project/systems/Brain/brian.html">Brain & Nervous</a>
+              <a href="../Project/systems/cardiovascular/cardiovascular.html">Cardiovascular</a>
+              <a href="../Project/systems/digestive/digestive.html">Digestive</a>
+              <a href="../Project/systems/respiratory/respiratory.html">Respiratory</a>
+              <a href="../Project/systems/skeletal/skeletal.html">Skeletal</a>
+              
             </div>
           </li>
           <li class = "dropdown"><a href="javascript:void(0)"><h2 style="margin-right: 10px; color:black;">Help</h2></a>
           <div class = "links">
-            <a href="/FA25-Group15/Project/allHelp.html">All Help</a>
-            <a href="/FA25-Group15/Project/personalHelp.html">Personal Help</a>
+            <a href="../Project/allHelp.html">All Help</a>
+            <a href="../Project/personalHelp.html">Personal Help</a>
           </div>
           </li>
         </ul>
       </header>
-        <div class="central-box">
+        <div class="central-box ">
             <main>
-                <section class="intro">
+                <section class="intro courier-prime-regular">
                     <h2>General Help Page</h2>  
                     <h3>Click on any habit to learn <br>
                     how you can improve your health!</h3>      
@@ -60,6 +65,7 @@
                         <p>Shoulder-opening stretches and gentle yoga improve chest expansion and airflow efficiency.</p>
                     </div>
             </div>
+            <hl></hl>
             <div class="dropdownO">
                 <button class="button">Calcium Deficiency 🦷</button>
                     <div class="content">
@@ -192,7 +198,6 @@
 
                     </div>
             </div>
-
             <div class="dropdownO">
                 <button class="button">Citations 📖</button>
                     <div class="content">
@@ -212,6 +217,7 @@
                     </div>
             </div>
     </div>
+    
 </div>
     <script>
         const dropdowns = document.querySelectorAll('.dropdownO');
