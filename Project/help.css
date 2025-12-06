@@ -33,6 +33,31 @@
   padding: 0.2rem 0.6rem;
   font-weight: 600;
 }
+.citation {
+  background: #fff;
+  color: black;
+  font-weight: 500;
+  font-size:large;
+  width: 100%;
+  border: 2px dashed rgb(23, 125, 33);
+  padding: 0.5rem;
+  margin: 5px 0;
+  text-align: center;
+  border-radius: 0.4rem;
+  width: 100px;
+  transition: all 0.3s;
+}
+.citation:hover {
+  background: rgb(34, 177, 48);
+  color: #fff;
+  border: 2px dashed #fff;
+}
+
+.citation:focus {
+  background: rgb(26, 137, 37);
+  color: #fff;
+  border: 2px dashed #fff;
+}
 
 .option {
   background: #fff;
@@ -128,53 +153,3 @@
   margin-top: 15px;
 }
 
-.dropdownO {
-  display: block;
-  margin-bottom: 5px;
-  width: 100%;
-}
-.dropdownO button{
-  background-color:#073b2f;
-  color: white;
-  padding: 20px 50px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  text-align: left;
-  font-size: 16px;
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color 0.3s;
-}
-
-.dropdownO button:hover{
-  background-color: #0a5241;
-}
-
-.dropdownO button::after{
-  content: '▼';
-  font-size: 12px;
-  transition: transform 0.3s;
-}
-
-.dropdownO button.active::after{
-  transform: rotate(180deg);
-}
-
-.dropdownO .content{
-  display: none;
-  background-color: rgb(230, 252, 244);
-  box-shadow: 2px 2px 8px rgb(105, 208, 142);
-  overflow: hidden;
-}
-
-.dropdownO .content.show{
- display: block;
-}
-
-.dropdownO .content p {
-  color: black;
-  padding: 10px 10%;
-  margin: 0;
-}
